@@ -6,7 +6,7 @@
 require('dotenv').config();
 
 // Now you can access any variable from the .env file
-const apiKey = process.env.OPENAI_API_KEY;
+const apiKey = process.env.GEMINI_API_KEY;
 const port = process.env.PORT;
 const appName = process.env.APP_NAME;
 
