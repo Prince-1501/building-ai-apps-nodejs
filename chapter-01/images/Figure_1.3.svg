@@ -1,0 +1,27 @@
+<svg width="100%" viewBox="0 0 680 130" xmlns="http://www.w3.org/2000/svg" style="font-family: Arial, sans-serif; background: transparent;">
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+
+<rect x="40" y="30" width="140" height="56" rx="8" fill="#E6F1FB" stroke="#85B7EB" stroke-width="1"/>
+<text x="110" y="50" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#0C447C">Customer</text>
+<text x="110" y="70" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#185FA5">Your code</text>
+
+<rect x="270" y="30" width="140" height="56" rx="8" fill="#FAEEDA" stroke="#EF9F27" stroke-width="1"/>
+<text x="340" y="50" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#633806">Waiter</text>
+<text x="340" y="70" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#854F0B">fetch / HTTP</text>
+
+<rect x="500" y="30" width="140" height="56" rx="8" fill="#FAECE7" stroke="#F0997B" stroke-width="1"/>
+<text x="570" y="50" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#712B13">Kitchen</text>
+<text x="570" y="70" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#993C1D">AI service</text>
+
+<line x1="180" y1="48" x2="268" y2="48" stroke="#888780" stroke-width="1" marker-end="url(#a)"/>
+<text x="224" y="42" text-anchor="middle" font-size="11" fill="#5F5E5A">Order</text>
+
+<line x1="410" y1="48" x2="498" y2="48" stroke="#888780" stroke-width="1" marker-end="url(#a)"/>
+<text x="454" y="42" text-anchor="middle" font-size="11" fill="#5F5E5A">Request</text>
+
+<line x1="498" y1="72" x2="410" y2="72" stroke="#888780" stroke-width="1" marker-end="url(#a)"/>
+<text x="454" y="96" text-anchor="middle" font-size="11" fill="#5F5E5A">Response</text>
+
+<line x1="268" y1="72" x2="180" y2="72" stroke="#888780" stroke-width="1" marker-end="url(#a)"/>
+<text x="224" y="96" text-anchor="middle" font-size="11" fill="#5F5E5A">Food</text>
+</svg>

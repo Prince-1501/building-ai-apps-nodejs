@@ -1,0 +1,18 @@
+<svg width="100%" viewBox="0 0 680 160" xmlns="http://www.w3.org/2000/svg" style="font-family: Arial, sans-serif; background: transparent;">
+<rect x="40" y="30" width="600" height="80" rx="10" fill="none" stroke="#AFA9EC" stroke-width="1.5" stroke-dasharray="6,4"/>
+<text x="340" y="20" text-anchor="middle" font-size="12" font-weight="600" fill="#534AB7">Context window (limited space)</text>
+
+<rect x="60" y="45" width="120" height="50" rx="6" fill="#E6F1FB" stroke="#85B7EB" stroke-width="1"/>
+<text x="120" y="70" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#0C447C">System prompt</text>
+
+<rect x="195" y="45" width="120" height="50" rx="6" fill="#FAEEDA" stroke="#EF9F27" stroke-width="1"/>
+<text x="255" y="70" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#633806">Chat history</text>
+
+<rect x="330" y="45" width="120" height="50" rx="6" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="1"/>
+<text x="390" y="70" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#085041">User query</text>
+
+<rect x="465" y="45" width="160" height="50" rx="6" fill="#FAECE7" stroke="#F0997B" stroke-width="1"/>
+<text x="545" y="70" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#712B13">AI response</text>
+
+<text x="340" y="140" text-anchor="middle" font-size="11" fill="#5F5E5A">Everything inside this box shares the same limited token space</text>
+</svg>
