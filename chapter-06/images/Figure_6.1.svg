@@ -1,0 +1,52 @@
+<svg viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg" font-family="Palatino Linotype, serif" font-size="13">
+  <!-- Title -->
+  <text x="350" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">Embeddings as GPS Coordinates</text>
+
+  <!-- Axes -->
+  <line x1="80" y1="360" x2="650" y2="360" stroke="#aaa" stroke-width="1"/>
+  <line x1="80" y1="360" x2="80" y2="50" stroke="#aaa" stroke-width="1"/>
+
+  <!-- Cluster 1: Royalty (top-left area) -->
+  <circle cx="180" cy="120" r="6" fill="#2B6CB0"/>
+  <text x="192" y="125" fill="#2B6CB0" font-weight="bold">king</text>
+  <circle cx="220" cy="140" r="6" fill="#2B6CB0"/>
+  <text x="232" y="145" fill="#2B6CB0" font-weight="bold">queen</text>
+  <circle cx="200" cy="160" r="6" fill="#2B6CB0"/>
+  <text x="212" y="165" fill="#2B6CB0" font-weight="bold">prince</text>
+  <circle cx="160" cy="150" r="6" fill="#2B6CB0"/>
+  <text x="105" y="155" fill="#2B6CB0" font-weight="bold">throne</text>
+
+  <!-- Cluster boundary -->
+  <ellipse cx="190" cy="142" rx="75" ry="50" fill="none" stroke="#2B6CB0" stroke-width="1" stroke-dasharray="5,4" opacity="0.5"/>
+  <text x="190" y="205" text-anchor="middle" font-size="11" fill="#2B6CB0">Royalty cluster</text>
+
+  <!-- Cluster 2: Vehicles (bottom-right area) -->
+  <circle cx="480" cy="280" r="6" fill="#276749"/>
+  <text x="492" y="285" fill="#276749" font-weight="bold">car</text>
+  <circle cx="520" cy="300" r="6" fill="#276749"/>
+  <text x="532" y="305" fill="#276749" font-weight="bold">bus</text>
+  <circle cx="500" cy="260" r="6" fill="#276749"/>
+  <text x="512" y="265" fill="#276749" font-weight="bold">truck</text>
+  <circle cx="540" cy="270" r="6" fill="#276749"/>
+  <text x="552" y="275" fill="#276749" font-weight="bold">train</text>
+
+  <!-- Cluster boundary -->
+  <ellipse cx="510" cy="278" rx="70" ry="45" fill="none" stroke="#276749" stroke-width="1" stroke-dasharray="5,4" opacity="0.5"/>
+  <text x="510" y="340" text-anchor="middle" font-size="11" fill="#276749">Vehicle cluster</text>
+
+  <!-- Cluster 3: Food (middle area) -->
+  <circle cx="380" cy="160" r="6" fill="#B7791F"/>
+  <text x="392" y="165" fill="#B7791F" font-weight="bold">apple</text>
+  <circle cx="420" cy="140" r="6" fill="#B7791F"/>
+  <text x="432" y="145" fill="#B7791F" font-weight="bold">banana</text>
+  <circle cx="400" cy="180" r="6" fill="#B7791F"/>
+  <text x="412" y="185" fill="#B7791F" font-weight="bold">mango</text>
+
+  <!-- Cluster boundary -->
+  <ellipse cx="400" cy="160" rx="55" ry="40" fill="none" stroke="#B7791F" stroke-width="1" stroke-dasharray="5,4" opacity="0.5"/>
+  <text x="400" y="215" text-anchor="middle" font-size="11" fill="#B7791F">Fruit cluster</text>
+
+  <!-- Key insight annotation -->
+  <rect x="130" y="355" width="440" height="35" rx="4" fill="#F8F9FA" stroke="#ddd" stroke-width="1"/>
+  <text x="350" y="377" text-anchor="middle" font-size="12" fill="#555">Similar meanings are close together. Different meanings are far apart.</text>
+</svg>

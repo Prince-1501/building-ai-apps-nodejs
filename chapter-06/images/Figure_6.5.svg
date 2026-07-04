@@ -1,0 +1,68 @@
+<svg viewBox="0 0 700 350" xmlns="http://www.w3.org/2000/svg" font-family="Palatino Linotype, serif" font-size="13">
+  <!-- Title -->
+  <text x="350" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">Semantic Search Engine Architecture</text>
+
+  <!-- Phase 1: Index -->
+  <rect x="20" y="50" width="310" height="280" rx="6" fill="#F8F9FA" stroke="#ddd" stroke-width="1"/>
+  <text x="175" y="72" text-anchor="middle" font-size="14" font-weight="bold" fill="#2B6CB0">Phase 1: Indexing</text>
+
+  <rect x="50" y="85" width="120" height="35" rx="4" fill="#E6F1FB" stroke="#2B6CB0" stroke-width="1"/>
+  <text x="110" y="107" text-anchor="middle" fill="#1a1a1a">Notes + Category</text>
+
+  <line x1="110" y1="120" x2="110" y2="150" stroke="#555" stroke-width="1"/>
+  <polygon points="105,148 115,148 110,155" fill="#555"/>
+
+  <rect x="50" y="155" width="120" height="35" rx="4" fill="#FAEEDA" stroke="#B7791F" stroke-width="1"/>
+  <text x="110" y="177" text-anchor="middle" fill="#1a1a1a">Gemini Embed</text>
+
+  <line x1="110" y1="190" x2="110" y2="220" stroke="#555" stroke-width="1"/>
+  <polygon points="105,218 115,218 110,225" fill="#555"/>
+
+  <rect x="50" y="225" width="120" height="35" rx="4" fill="#EEEDFE" stroke="#6B46C1" stroke-width="1"/>
+  <text x="110" y="247" text-anchor="middle" fill="#1a1a1a">768-dim Vector</text>
+
+  <line x1="110" y1="260" x2="110" y2="290" stroke="#555" stroke-width="1"/>
+  <polygon points="105,288 115,288 110,295" fill="#555"/>
+
+  <rect x="40" y="295" width="140" height="30" rx="4" fill="#E1F5EE" stroke="#276749" stroke-width="1.2"/>
+  <text x="110" y="315" text-anchor="middle" font-weight="bold" fill="#276749">Pinecone</text>
+
+  <!-- Arrow labels -->
+  <text x="195" y="140" font-size="10" fill="#888">embed</text>
+  <text x="195" y="210" font-size="10" fill="#888">vector</text>
+  <text x="195" y="280" font-size="10" fill="#888">upsert</text>
+
+  <!-- Phase 2: Search -->
+  <rect x="370" y="50" width="310" height="280" rx="6" fill="#F8F9FA" stroke="#ddd" stroke-width="1"/>
+  <text x="525" y="72" text-anchor="middle" font-size="14" font-weight="bold" fill="#276749">Phase 2: Search</text>
+
+  <rect x="430" y="85" width="140" height="35" rx="4" fill="#E6F1FB" stroke="#2B6CB0" stroke-width="1"/>
+  <text x="500" y="107" text-anchor="middle" fill="#1a1a1a">User Query</text>
+
+  <line x1="500" y1="120" x2="500" y2="150" stroke="#555" stroke-width="1"/>
+  <polygon points="495,148 505,148 500,155" fill="#555"/>
+
+  <rect x="430" y="155" width="140" height="35" rx="4" fill="#FAEEDA" stroke="#B7791F" stroke-width="1"/>
+  <text x="500" y="177" text-anchor="middle" fill="#1a1a1a">Gemini Embed</text>
+
+  <line x1="500" y1="190" x2="500" y2="220" stroke="#555" stroke-width="1"/>
+  <polygon points="495,218 505,218 500,225" fill="#555"/>
+
+  <rect x="430" y="225" width="140" height="35" rx="4" fill="#E1F5EE" stroke="#276749" stroke-width="1.2"/>
+  <text x="500" y="247" text-anchor="middle" font-weight="bold" fill="#276749">Pinecone Query</text>
+
+  <line x1="500" y1="260" x2="500" y2="290" stroke="#555" stroke-width="1"/>
+  <polygon points="495,288 505,288 500,295" fill="#555"/>
+
+  <rect x="420" y="295" width="160" height="30" rx="4" fill="#E6F1FB" stroke="#2B6CB0" stroke-width="1.2"/>
+  <text x="500" y="315" text-anchor="middle" font-weight="bold" fill="#2B6CB0">Top 3 Results</text>
+
+  <!-- Arrow labels -->
+  <text x="555" y="140" font-size="10" fill="#888">embed</text>
+  <text x="555" y="210" font-size="10" fill="#888">similarity</text>
+  <text x="555" y="280" font-size="10" fill="#888">ranked</text>
+
+  <!-- Connection between phases -->
+  <line x1="180" y1="310" x2="420" y2="240" stroke="#276749" stroke-width="1" stroke-dasharray="6,4"/>
+  <text x="300" y="268" text-anchor="middle" font-size="10" fill="#276749">stored vectors</text>
+</svg>

@@ -1,0 +1,64 @@
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="Palatino Linotype, serif" font-size="13">
+  <!-- Title -->
+  <text x="350" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">How a Vector Database Works</text>
+
+  <!-- STORE flow (top) -->
+  <text x="350" y="55" text-anchor="middle" font-size="14" font-weight="bold" fill="#2B6CB0">Storing Data</text>
+
+  <rect x="30" y="70" width="120" height="40" rx="5" fill="#E6F1FB" stroke="#2B6CB0" stroke-width="1.2"/>
+  <text x="90" y="95" text-anchor="middle" font-weight="bold" fill="#1a1a1a">Text</text>
+
+  <line x1="150" y1="90" x2="195" y2="90" stroke="#555" stroke-width="1.2"/>
+  <polygon points="193,86 193,94 200,90" fill="#555"/>
+
+  <rect x="200" y="70" width="140" height="40" rx="5" fill="#FAEEDA" stroke="#B7791F" stroke-width="1.2"/>
+  <text x="270" y="95" text-anchor="middle" font-weight="bold" fill="#1a1a1a">Embedding API</text>
+
+  <line x1="340" y1="90" x2="385" y2="90" stroke="#555" stroke-width="1.2"/>
+  <polygon points="383,86 383,94 390,90" fill="#555"/>
+  <text x="363" y="66" text-anchor="middle" font-size="10" fill="#888">768 numbers</text>
+
+  <rect x="390" y="70" width="120" height="40" rx="5" fill="#EEEDFE" stroke="#6B46C1" stroke-width="1.2"/>
+  <text x="450" y="95" text-anchor="middle" font-weight="bold" fill="#1a1a1a">Vector</text>
+
+  <line x1="510" y1="90" x2="555" y2="90" stroke="#555" stroke-width="1.2"/>
+  <polygon points="553,86 553,94 560,90" fill="#555"/>
+  <text x="533" y="82" text-anchor="middle" font-size="10" fill="#888">upsert</text>
+
+  <rect x="560" y="65" width="120" height="50" rx="5" fill="#E1F5EE" stroke="#276749" stroke-width="1.5"/>
+  <text x="620" y="88" text-anchor="middle" font-weight="bold" fill="#276749">Pinecone</text>
+  <text x="620" y="105" text-anchor="middle" font-size="10" fill="#555">Vector Database</text>
+
+  <!-- QUERY flow (bottom) -->
+  <text x="350" y="160" text-anchor="middle" font-size="14" font-weight="bold" fill="#276749">Querying Data</text>
+
+  <rect x="30" y="175" width="120" height="40" rx="5" fill="#E6F1FB" stroke="#2B6CB0" stroke-width="1.2"/>
+  <text x="90" y="200" text-anchor="middle" font-weight="bold" fill="#1a1a1a">Query</text>
+
+  <line x1="150" y1="195" x2="195" y2="195" stroke="#555" stroke-width="1.2"/>
+  <polygon points="193,191 193,199 200,195" fill="#555"/>
+
+  <rect x="200" y="175" width="140" height="40" rx="5" fill="#FAEEDA" stroke="#B7791F" stroke-width="1.2"/>
+  <text x="270" y="200" text-anchor="middle" font-weight="bold" fill="#1a1a1a">Embedding API</text>
+
+  <line x1="340" y1="195" x2="385" y2="195" stroke="#555" stroke-width="1.2"/>
+  <polygon points="383,191 383,199 390,195" fill="#555"/>
+
+  <rect x="390" y="175" width="120" height="40" rx="5" fill="#EEEDFE" stroke="#6B46C1" stroke-width="1.2"/>
+  <text x="450" y="200" text-anchor="middle" font-weight="bold" fill="#1a1a1a">Query Vector</text>
+
+  <line x1="510" y1="195" x2="555" y2="195" stroke="#555" stroke-width="1.2"/>
+  <polygon points="553,191 553,199 560,195" fill="#555"/>
+  <text x="533" y="187" text-anchor="middle" font-size="10" fill="#888">query</text>
+
+  <rect x="560" y="170" width="120" height="50" rx="5" fill="#E1F5EE" stroke="#276749" stroke-width="1.5"/>
+  <text x="620" y="193" text-anchor="middle" font-weight="bold" fill="#276749">Pinecone</text>
+  <text x="620" y="210" text-anchor="middle" font-size="10" fill="#555">Find similar</text>
+
+  <!-- Results arrow back -->
+  <line x1="620" y1="220" x2="620" y2="260" stroke="#276749" stroke-width="1.2"/>
+  <polygon points="615,258 625,258 620,265" fill="#276749"/>
+
+  <rect x="520" y="265" width="180" height="30" rx="4" fill="#E1F5EE" stroke="#276749" stroke-width="1"/>
+  <text x="610" y="285" text-anchor="middle" font-size="12" fill="#276749">Top K similar results</text>
+</svg>
