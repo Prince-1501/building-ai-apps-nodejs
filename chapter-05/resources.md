@@ -12,6 +12,8 @@
 
 ## Video resources
 - [AI models playlist — Hello World by Prince](https://www.youtube.com/@HelloWorldbyprince)
+- [AI LLM Bootcamp Playlist — Hello World by Prince](https://www.youtube.com/playlist?list=PLzjZaW71kMwS2MrPcY22-oZxHjrpi6yEZ)
+- [Complete Node.js Playlist — Hello World by Prince](https://www.youtube.com/playlist?list=PLzjZaW71kMwScTRKzoasdyB1sX-a9EbFp)
 
 ## Code files in this chapter
 | File | What it demonstrates |
