@@ -1,0 +1,22 @@
+{
+  "name": "chapter-05-multiple-ai-models",
+  "version": "1.0.0",
+  "description": "Code examples from Chapter 5: Working with Multiple AI Models",
+  "scripts": {
+    "openai": "node 01_openai.js",
+    "claude": "node 02_claude.js",
+    "huggingface": "node 03_huggingface.js",
+    "ollama": "node 04_ollama.js",
+    "service": "node 05_model_service.js",
+    "fallback": "node 06_fallback.js",
+    "router": "node 07_smart_router.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.0",
+    "@google/genai": "^2.3.0",
+    "@huggingface/inference": "^4.13.22",
+    "dotenv": "^16.4.0",
+    "ollama": "^0.5.0",
+    "openai": "^4.0.0"
+  }
+}

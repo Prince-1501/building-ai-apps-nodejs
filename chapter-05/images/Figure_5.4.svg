@@ -1,0 +1,55 @@
+<svg viewBox="0 0 750 350" xmlns="http://www.w3.org/2000/svg" font-family="Palatino Linotype, serif" font-size="14">
+  <!-- App code box -->
+  <rect x="270" y="20" width="210" height="50" rx="6" fill="#E6F1FB" stroke="#2B6CB0" stroke-width="1.5"/>
+  <text x="375" y="50" text-anchor="middle" font-weight="bold" fill="#1a1a1a">Application Code</text>
+
+  <!-- Arrow down -->
+  <line x1="375" y1="70" x2="375" y2="110" stroke="#555" stroke-width="1.5"/>
+  <polygon points="370,108 380,108 375,116" fill="#555"/>
+  <text x="405" y="95" font-size="12" fill="#888">ask(prompt)</text>
+
+  <!-- AIService box -->
+  <rect x="220" y="118" width="310" height="55" rx="6" fill="#FAEEDA" stroke="#B7791F" stroke-width="1.5"/>
+  <text x="375" y="140" text-anchor="middle" font-weight="bold" font-size="16" fill="#1a1a1a">AIService</text>
+  <text x="375" y="160" text-anchor="middle" font-size="12" fill="#666">One interface, any provider</text>
+
+  <!-- Arrow branches down -->
+  <line x1="375" y1="173" x2="375" y2="200" stroke="#555" stroke-width="1"/>
+
+  <!-- Four provider boxes -->
+  <line x1="375" y1="200" x2="95" y2="220" stroke="#555" stroke-width="1"/>
+  <line x1="375" y1="200" x2="280" y2="220" stroke="#555" stroke-width="1"/>
+  <line x1="375" y1="200" x2="470" y2="220" stroke="#555" stroke-width="1"/>
+  <line x1="375" y1="200" x2="655" y2="220" stroke="#555" stroke-width="1"/>
+
+  <!-- Gemini -->
+  <rect x="25" y="220" width="140" height="55" rx="5" fill="#E6F1FB" stroke="#2B6CB0" stroke-width="1.2"/>
+  <text x="95" y="245" text-anchor="middle" font-weight="bold" fill="#2B6CB0">Gemini</text>
+  <text x="95" y="263" text-anchor="middle" font-size="11" fill="#555">@google/genai</text>
+
+  <!-- OpenAI -->
+  <rect x="210" y="220" width="140" height="55" rx="5" fill="#E6F1FB" stroke="#2B6CB0" stroke-width="1.2"/>
+  <text x="280" y="245" text-anchor="middle" font-weight="bold" fill="#2B6CB0">OpenAI</text>
+  <text x="280" y="263" text-anchor="middle" font-size="11" fill="#555">openai</text>
+
+  <!-- Claude -->
+  <rect x="400" y="220" width="140" height="55" rx="5" fill="#E6F1FB" stroke="#2B6CB0" stroke-width="1.2"/>
+  <text x="470" y="245" text-anchor="middle" font-weight="bold" fill="#2B6CB0">Claude</text>
+  <text x="470" y="263" text-anchor="middle" font-size="11" fill="#555">@anthropic-ai/sdk</text>
+
+  <!-- Ollama -->
+  <rect x="585" y="220" width="140" height="55" rx="5" fill="#E1F5EE" stroke="#276749" stroke-width="1.2"/>
+  <text x="655" y="245" text-anchor="middle" font-weight="bold" fill="#276749">Ollama</text>
+  <text x="655" y="263" text-anchor="middle" font-size="11" fill="#555">ollama (local)</text>
+
+  <!-- Response arrows back up -->
+  <line x1="95" y1="275" x2="95" y2="310" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="280" y1="275" x2="280" y2="310" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="470" y1="275" x2="470" y2="310" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="655" y1="275" x2="655" y2="310" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <text x="95" y="328" text-anchor="middle" font-size="11" fill="#888">response.text</text>
+  <text x="280" y="328" text-anchor="middle" font-size="11" fill="#888">choices[0]...content</text>
+  <text x="470" y="328" text-anchor="middle" font-size="11" fill="#888">content[0].text</text>
+  <text x="655" y="328" text-anchor="middle" font-size="11" fill="#888">message.content</text>
+</svg>
