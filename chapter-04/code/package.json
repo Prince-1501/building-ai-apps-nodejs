@@ -1,0 +1,18 @@
+{
+  "name": "chapter-04-prompt-engineering",
+  "version": "1.0.0",
+  "description": "Code examples from Chapter 4: Mastering Prompts and Prompt Engineering",
+  "scripts": {
+    "before-after": "node 01_before_after.js",
+    "system": "node 02_system_instructions.js",
+    "few-shot": "node 03_few_shot.js",
+    "chain-of-thought": "node 04_chain_of_thought.js",
+    "structured": "node 05_structured_output.js",
+    "templates": "node 06_prompt_templates.js",
+    "tester": "node 07_prompt_tester.js"
+  },
+  "dependencies": {
+    "@google/genai": "^2.3.0",
+    "dotenv": "^16.4.0"
+  }
+}
