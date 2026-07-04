@@ -1,0 +1,43 @@
+// 01_load_documents.js
+
+const fs = require('fs');
+
+// Create a sample document for our RAG system
+const sampleDocument = `
+Node.js Best Practices Guide
+
+Chapter 1: Error Handling
+Always use try-catch blocks for async operations. Never ignore errors
+silently. Use a centralized error handling middleware in Express apps.
+Log errors with enough context to debug them later. Use error monitoring
+tools like Sentry in production.
+
+Chapter 2: Security
+Never store passwords in plain text. Use bcrypt for hashing. Always
+validate and sanitize user input. Use helmet.js to set security headers.
+Keep dependencies updated to avoid known vulnerabilities. Use
+environment variables for secrets, never hardcode them.
+
+Chapter 3: Performance
+Use caching with Redis for frequently accessed data. Implement database
+connection pooling. Avoid blocking the event loop with heavy computations.
+Use streams for processing large files. Enable gzip compression for
+API responses. Use clustering to take advantage of multiple CPU cores.
+
+Chapter 4: Testing
+Write unit tests for business logic. Use integration tests for API
+endpoints. Aim for at least 80% code coverage. Use mocking for external
+services. Run tests automatically in CI/CD pipelines. Test error cases,
+not just happy paths.
+`;
+
+// Save the sample document
+fs.writeFileSync('sample_document.txt', sampleDocument.trim());
+console.log('Document saved: sample_document.txt');
+
+// Load and display
+const content = fs.readFileSync('sample_document.txt', 'utf-8');
+console.log('Document loaded successfully');
+console.log('Character count:', content.length);
+console.log('Preview:', content.substring(0, 100) + '...');
+console.log('\nDocument is ready for the RAG pipeline.');

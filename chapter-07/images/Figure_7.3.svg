@@ -1,0 +1,41 @@
+<svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg" font-family="Palatino Linotype, serif" font-size="13">
+  <text x="350" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">Chunking Strategies</text>
+
+  <!-- Original doc -->
+  <text x="350" y="50" text-anchor="middle" font-size="12" fill="#888">Original document</text>
+  <rect x="80" y="58" width="540" height="20" rx="3" fill="#E6F1FB" stroke="#2B6CB0" stroke-width="1"/>
+
+  <!-- Fixed-size no overlap -->
+  <text x="60" y="110" text-anchor="end" font-size="11" fill="#555">No overlap</text>
+  <rect x="80" y="95" width="180" height="20" rx="3" fill="#FAEEDA" stroke="#B7791F" stroke-width="1"/>
+  <rect x="260" y="95" width="180" height="20" rx="3" fill="#FAEEDA" stroke="#B7791F" stroke-width="1"/>
+  <rect x="440" y="95" width="180" height="20" rx="3" fill="#FAEEDA" stroke="#B7791F" stroke-width="1"/>
+  <text x="170" y="110" text-anchor="middle" font-size="10" fill="#B7791F">Chunk 1</text>
+  <text x="350" y="110" text-anchor="middle" font-size="10" fill="#B7791F">Chunk 2</text>
+  <text x="530" y="110" text-anchor="middle" font-size="10" fill="#B7791F">Chunk 3</text>
+
+  <!-- Gap indicator -->
+  <line x1="260" y1="90" x2="260" y2="120" stroke="#E74C3C" stroke-width="1.5"/>
+  <text x="260" y="130" text-anchor="middle" font-size="9" fill="#E74C3C">context lost</text>
+  <line x1="440" y1="90" x2="440" y2="120" stroke="#E74C3C" stroke-width="1.5"/>
+  <text x="440" y="130" text-anchor="middle" font-size="9" fill="#E74C3C">context lost</text>
+
+  <!-- Fixed-size with overlap -->
+  <text x="60" y="175" text-anchor="end" font-size="11" fill="#555">With overlap</text>
+  <rect x="80" y="160" width="210" height="20" rx="3" fill="#E1F5EE" stroke="#276749" stroke-width="1"/>
+  <rect x="230" y="160" width="210" height="20" rx="3" fill="#E1F5EE" stroke="#276749" stroke-width="1"/>
+  <rect x="380" y="160" width="210" height="20" rx="3" fill="#E1F5EE" stroke="#276749" stroke-width="1"/>
+  <text x="185" y="175" text-anchor="middle" font-size="10" fill="#276749">Chunk 1</text>
+  <text x="335" y="175" text-anchor="middle" font-size="10" fill="#276749">Chunk 2</text>
+  <text x="485" y="175" text-anchor="middle" font-size="10" fill="#276749">Chunk 3</text>
+
+  <!-- Overlap indicators -->
+  <rect x="230" y="160" width="60" height="20" rx="0" fill="#276749" fill-opacity="0.15"/>
+  <rect x="380" y="160" width="60" height="20" rx="0" fill="#276749" fill-opacity="0.15"/>
+  <text x="260" y="195" text-anchor="middle" font-size="9" fill="#276749">overlap</text>
+  <text x="410" y="195" text-anchor="middle" font-size="9" fill="#276749">overlap</text>
+
+  <!-- Bottom note -->
+  <rect x="150" y="215" width="400" height="25" rx="4" fill="#F8F9FA" stroke="#ddd" stroke-width="1"/>
+  <text x="350" y="232" text-anchor="middle" font-size="11" fill="#555">Overlap preserves context at chunk boundaries (recommended)</text>
+</svg>

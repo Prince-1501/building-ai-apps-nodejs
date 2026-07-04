@@ -1,0 +1,74 @@
+<svg viewBox="0 0 750 320" xmlns="http://www.w3.org/2000/svg" font-family="Palatino Linotype, serif" font-size="13">
+  <text x="375" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">The RAG Pipeline</text>
+
+  <!-- Indexing Phase label -->
+  <rect x="20" y="45" width="710" height="130" rx="8" fill="#F8F9FA" stroke="#2B6CB0" stroke-width="1" stroke-dasharray="6,4"/>
+  <text x="375" y="65" text-anchor="middle" font-size="14" font-weight="bold" fill="#2B6CB0">Indexing Phase (runs once)</text>
+
+  <!-- Step 1: Load -->
+  <rect x="40" y="80" width="120" height="45" rx="5" fill="#E6F1FB" stroke="#2B6CB0" stroke-width="1.2"/>
+  <text x="100" y="100" text-anchor="middle" font-size="11" fill="#888">Step 1</text>
+  <text x="100" y="116" text-anchor="middle" font-weight="bold" fill="#1a1a1a">Load</text>
+
+  <line x1="160" y1="102" x2="195" y2="102" stroke="#555" stroke-width="1"/>
+  <polygon points="193,98 193,106 200,102" fill="#555"/>
+
+  <!-- Step 2: Chunk -->
+  <rect x="200" y="80" width="120" height="45" rx="5" fill="#E6F1FB" stroke="#2B6CB0" stroke-width="1.2"/>
+  <text x="260" y="100" text-anchor="middle" font-size="11" fill="#888">Step 2</text>
+  <text x="260" y="116" text-anchor="middle" font-weight="bold" fill="#1a1a1a">Chunk</text>
+
+  <line x1="320" y1="102" x2="355" y2="102" stroke="#555" stroke-width="1"/>
+  <polygon points="353,98 353,106 360,102" fill="#555"/>
+
+  <!-- Step 3: Embed -->
+  <rect x="360" y="80" width="120" height="45" rx="5" fill="#FAEEDA" stroke="#B7791F" stroke-width="1.2"/>
+  <text x="420" y="100" text-anchor="middle" font-size="11" fill="#888">Step 3</text>
+  <text x="420" y="116" text-anchor="middle" font-weight="bold" fill="#1a1a1a">Embed</text>
+
+  <line x1="480" y1="102" x2="515" y2="102" stroke="#555" stroke-width="1"/>
+  <polygon points="513,98 513,106 520,102" fill="#555"/>
+
+  <!-- Step 4: Store -->
+  <rect x="520" y="80" width="120" height="45" rx="5" fill="#E1F5EE" stroke="#276749" stroke-width="1.2"/>
+  <text x="580" y="100" text-anchor="middle" font-size="11" fill="#888">Step 4</text>
+  <text x="580" y="116" text-anchor="middle" font-weight="bold" fill="#276749">Store</text>
+  <text x="580" y="138" text-anchor="middle" font-size="10" fill="#555">Pinecone</text>
+
+  <!-- Query Phase label -->
+  <rect x="20" y="185" width="710" height="125" rx="8" fill="#F8F9FA" stroke="#276749" stroke-width="1" stroke-dasharray="6,4"/>
+  <text x="375" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#276749">Query Phase (runs every question)</text>
+
+  <!-- Step 5: Retrieve -->
+  <rect x="140" y="220" width="160" height="45" rx="5" fill="#E1F5EE" stroke="#276749" stroke-width="1.2"/>
+  <text x="220" y="240" text-anchor="middle" font-size="11" fill="#888">Step 5</text>
+  <text x="220" y="256" text-anchor="middle" font-weight="bold" fill="#276749">Retrieve</text>
+
+  <!-- User question input -->
+  <rect x="40" y="225" width="80" height="35" rx="4" fill="#EEEDFE" stroke="#6B46C1" stroke-width="1"/>
+  <text x="80" y="247" text-anchor="middle" font-size="10" fill="#6B46C1">Question</text>
+
+  <line x1="120" y1="242" x2="137" y2="242" stroke="#555" stroke-width="1"/>
+  <polygon points="135,238 135,246 142,242" fill="#555"/>
+
+  <line x1="300" y1="242" x2="365" y2="242" stroke="#555" stroke-width="1"/>
+  <polygon points="363,238 363,246 370,242" fill="#555"/>
+  <text x="333" y="234" text-anchor="middle" font-size="10" fill="#888">context</text>
+
+  <!-- Step 6: Generate -->
+  <rect x="370" y="220" width="160" height="45" rx="5" fill="#FAEEDA" stroke="#B7791F" stroke-width="1.2"/>
+  <text x="450" y="240" text-anchor="middle" font-size="11" fill="#888">Step 6</text>
+  <text x="450" y="256" text-anchor="middle" font-weight="bold" fill="#1a1a1a">Generate</text>
+
+  <line x1="530" y1="242" x2="580" y2="242" stroke="#555" stroke-width="1"/>
+  <polygon points="578,238 578,246 585,242" fill="#555"/>
+
+  <!-- Answer -->
+  <rect x="585" y="225" width="120" height="35" rx="4" fill="#E1F5EE" stroke="#276749" stroke-width="1.2"/>
+  <text x="645" y="247" text-anchor="middle" font-weight="bold" fill="#276749">Answer</text>
+
+  <!-- Connection between phases -->
+  <line x1="580" y1="125" x2="580" y2="185" stroke="#276749" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="580" y1="185" x2="220" y2="185" stroke="#276749" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="220" y1="185" x2="220" y2="220" stroke="#276749" stroke-width="1" stroke-dasharray="4,3"/>
+</svg>
