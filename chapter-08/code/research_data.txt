@@ -1,0 +1,7 @@
+Node.js Usage Statistics 2026
+- 95% of Fortune 500 companies use Node.js
+- Average salary: $120,000 per year in the US
+- 50 million npm packages downloaded daily
+- Node.js powers 1.3% of all websites globally
+- Express.js is used by 64% of Node.js developers
+- Top industries: Finance (28%), Tech (25%), Healthcare (15%)

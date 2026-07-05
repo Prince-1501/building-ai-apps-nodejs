@@ -1,0 +1,50 @@
+<svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" font-family="Palatino Linotype, serif" font-size="13">
+  <text x="360" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">AI Research Assistant Architecture</text>
+
+  <!-- User -->
+  <rect x="270" y="45" width="180" height="40" rx="5" fill="#EEEDFE" stroke="#6B46C1" stroke-width="1.2"/>
+  <text x="360" y="70" text-anchor="middle" font-weight="bold" fill="#6B46C1">Research Question</text>
+
+  <line x1="360" y1="85" x2="360" y2="115" stroke="#555" stroke-width="1.2"/>
+  <polygon points="355,113 365,113 360,120" fill="#555"/>
+
+  <!-- LangChain Agent -->
+  <rect x="230" y="120" width="260" height="50" rx="6" fill="#FAEEDA" stroke="#B7791F" stroke-width="1.5"/>
+  <text x="360" y="143" text-anchor="middle" font-weight="bold" font-size="15" fill="#1a1a1a">LangChain Agent</text>
+  <text x="360" y="160" text-anchor="middle" font-size="10" fill="#888">ReAct loop + Gemini 2.5 Flash</text>
+
+  <!-- Tool branches -->
+  <line x1="280" y1="170" x2="110" y2="200" stroke="#276749" stroke-width="1.2"/>
+  <line x1="330" y1="170" x2="280" y2="200" stroke="#276749" stroke-width="1.2"/>
+  <line x1="390" y1="170" x2="450" y2="200" stroke="#276749" stroke-width="1.2"/>
+  <line x1="440" y1="170" x2="610" y2="200" stroke="#276749" stroke-width="1.2"/>
+
+  <!-- Tool boxes -->
+  <rect x="40" y="200" width="130" height="45" rx="4" fill="#E1F5EE" stroke="#276749" stroke-width="1.2"/>
+  <text x="105" y="220" text-anchor="middle" font-weight="bold" fill="#276749">Calculator</text>
+  <text x="105" y="237" text-anchor="middle" font-size="10" fill="#555">Math expressions</text>
+
+  <rect x="215" y="200" width="130" height="45" rx="4" fill="#E1F5EE" stroke="#276749" stroke-width="1.2"/>
+  <text x="280" y="220" text-anchor="middle" font-weight="bold" fill="#276749">File Reader</text>
+  <text x="280" y="237" text-anchor="middle" font-size="10" fill="#555">Local text files</text>
+
+  <rect x="385" y="200" width="130" height="45" rx="4" fill="#E1F5EE" stroke="#276749" stroke-width="1.2"/>
+  <text x="450" y="220" text-anchor="middle" font-weight="bold" fill="#276749">Web Fetcher</text>
+  <text x="450" y="237" text-anchor="middle" font-size="10" fill="#555">URL content</text>
+
+  <rect x="550" y="200" width="130" height="45" rx="4" fill="#E1F5EE" stroke="#276749" stroke-width="1.2"/>
+  <text x="615" y="220" text-anchor="middle" font-weight="bold" fill="#276749">Date/Time</text>
+  <text x="615" y="237" text-anchor="middle" font-size="10" fill="#555">Current date</text>
+
+  <!-- Answer -->
+  <line x1="105" y1="245" x2="105" y2="260" stroke="#555" stroke-width="1"/>
+  <line x1="280" y1="245" x2="280" y2="260" stroke="#555" stroke-width="1"/>
+  <line x1="450" y1="245" x2="450" y2="260" stroke="#555" stroke-width="1"/>
+  <line x1="615" y1="245" x2="615" y2="260" stroke="#555" stroke-width="1"/>
+  <line x1="105" y1="260" x2="615" y2="260" stroke="#555" stroke-width="1"/>
+  <line x1="360" y1="260" x2="360" y2="270" stroke="#555" stroke-width="1.2"/>
+  <polygon points="355,268 365,268 360,275" fill="#555"/>
+
+  <rect x="260" y="275" width="200" height="30" rx="4" fill="#E6F1FB" stroke="#2B6CB0" stroke-width="1.2"/>
+  <text x="360" y="295" text-anchor="middle" font-weight="bold" fill="#2B6CB0">Research Answer</text>
+</svg>

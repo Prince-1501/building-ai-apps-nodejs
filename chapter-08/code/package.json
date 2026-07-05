@@ -1,0 +1,19 @@
+{
+  "name": "chapter-08-ai-agents",
+  "version": "1.0.0",
+  "description": "Code examples from Chapter 8: AI Agents and Tool Integration",
+  "scripts": {
+    "function-calling": "node 01_function_calling.js",
+    "agent-loop": "node 02_agent_loop.js",
+    "langchain": "node 03_langchain_agent.mjs",
+    "tools": "node 04_custom_tools.mjs",
+    "research": "node 05_research_assistant.mjs"
+  },
+  "dependencies": {
+    "@google/genai": "^2.3.0",
+    "langchain": "^1.0.0",
+    "@langchain/google-genai": "^2.0.0",
+    "zod": "^3.23.0",
+    "dotenv": "^16.4.0"
+  }
+}
