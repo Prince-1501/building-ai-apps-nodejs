@@ -1,0 +1,24 @@
+<svg viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg" font-family="Palatino Linotype, serif" font-size="13">
+  <text x="350" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">Token-Based Pricing</text>
+
+  <!-- Input section -->
+  <rect x="30" y="55" width="300" height="140" rx="6" fill="#F8F9FA" stroke="#2B6CB0" stroke-width="1"/>
+  <text x="180" y="78" text-anchor="middle" font-size="14" font-weight="bold" fill="#2B6CB0">Input Tokens (Prompt)</text>
+  <text x="180" y="100" text-anchor="middle" font-size="11" fill="#555">"Explain how Node.js works"</text>
+  <text x="180" y="118" text-anchor="middle" font-size="11" fill="#555">≈ 6 tokens</text>
+  <rect x="60" y="130" width="240" height="30" rx="4" fill="#E6F1FB" stroke="#2B6CB0" stroke-width="1"/>
+  <text x="180" y="150" text-anchor="middle" font-size="12" fill="#2B6CB0">$0.30 per 1M tokens (Flash)</text>
+  <text x="180" y="180" text-anchor="middle" font-size="11" font-weight="bold" fill="#2B6CB0">Cheaper (reading is easy)</text>
+
+  <!-- Output section -->
+  <rect x="370" y="55" width="300" height="140" rx="6" fill="#F8F9FA" stroke="#276749" stroke-width="1"/>
+  <text x="520" y="78" text-anchor="middle" font-size="14" font-weight="bold" fill="#276749">Output Tokens (Response)</text>
+  <text x="520" y="100" text-anchor="middle" font-size="11" fill="#555">"Node.js is a JavaScript runtime..."</text>
+  <text x="520" y="118" text-anchor="middle" font-size="11" fill="#555">≈ 150 tokens</text>
+  <rect x="400" y="130" width="240" height="30" rx="4" fill="#E1F5EE" stroke="#276749" stroke-width="1"/>
+  <text x="520" y="150" text-anchor="middle" font-size="12" fill="#276749">$2.50 per 1M tokens (Flash)</text>
+  <text x="520" y="180" text-anchor="middle" font-size="11" font-weight="bold" fill="#276749">8x more (generating is hard)</text>
+
+  <!-- Arrow between -->
+  <text x="350" y="110" text-anchor="middle" font-size="20" fill="#555">→</text>
+</svg>

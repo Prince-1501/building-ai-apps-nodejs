@@ -1,0 +1,49 @@
+<svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg" font-family="Palatino Linotype, serif" font-size="13">
+  <text x="350" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">Safety Layers in an AI Application</text>
+
+  <rect x="30" y="55" width="120" height="45" rx="5" fill="#EEEDFE" stroke="#6B46C1" stroke-width="1.2"/>
+  <text x="90" y="82" text-anchor="middle" font-weight="bold" fill="#6B46C1">User Input</text>
+
+  <line x1="150" y1="77" x2="185" y2="77" stroke="#555" stroke-width="1.2"/>
+  <polygon points="183,73 183,81 190,77" fill="#555"/>
+
+  <rect x="190" y="50" width="130" height="55" rx="5" fill="#FAECE7" stroke="#E74C3C" stroke-width="1.5"/>
+  <text x="255" y="73" text-anchor="middle" font-weight="bold" fill="#E74C3C">Layer 1</text>
+  <text x="255" y="92" text-anchor="middle" font-size="11" fill="#555">Input validation</text>
+
+  <line x1="320" y1="77" x2="355" y2="77" stroke="#555" stroke-width="1.2"/>
+  <polygon points="353,73 353,81 360,77" fill="#555"/>
+
+  <rect x="360" y="50" width="130" height="55" rx="5" fill="#FAEEDA" stroke="#B7791F" stroke-width="1.5"/>
+  <text x="425" y="73" text-anchor="middle" font-weight="bold" fill="#B7791F">Layer 2</text>
+  <text x="425" y="92" text-anchor="middle" font-size="11" fill="#555">Safety settings</text>
+
+  <line x1="490" y1="77" x2="525" y2="77" stroke="#555" stroke-width="1.2"/>
+  <polygon points="523,73 523,81 530,77" fill="#555"/>
+
+  <rect x="530" y="55" width="140" height="45" rx="5" fill="#E1F5EE" stroke="#276749" stroke-width="1.2"/>
+  <text x="600" y="82" text-anchor="middle" font-weight="bold" fill="#276749">AI Model</text>
+
+  <!-- Response flow -->
+  <!-- Arrow from AI Model to Layer 3 -->
+  
+
+  <rect x="360" y="145" width="130" height="55" rx="5" fill="#FAEEDA" stroke="#B7791F" stroke-width="1.5"/>
+  <text x="425" y="168" text-anchor="middle" font-weight="bold" fill="#B7791F">Layer 3</text>
+  <text x="425" y="187" text-anchor="middle" font-size="11" fill="#555">Output filtering</text>
+
+  <line x1="600" y1="100" x2="600" y2="172" stroke="#555" stroke-width="1.2"/>
+  <line x1="600" y1="172" x2="495" y2="172" stroke="#555" stroke-width="1.2"/>
+  <polygon points="500,168 500,176 493,172" fill="#555"/>
+
+  <line x1="360" y1="172" x2="195" y2="172" stroke="#555" stroke-width="1.2"/>
+  <polygon points="200,168 200,176 193,172" fill="#555"/>
+
+  <rect x="30" y="150" width="160" height="45" rx="5" fill="#E6F1FB" stroke="#2B6CB0" stroke-width="1.2"/>
+  <text x="110" y="170" text-anchor="middle" font-weight="bold" fill="#2B6CB0">Safe Response</text>
+  <text x="110" y="186" text-anchor="middle" font-size="10" fill="#555">Delivered to user</text>
+
+  <!-- Blocked -->
+  <rect x="360" y="210" width="130" height="28" rx="4" fill="#FAECE7" stroke="#E74C3C" stroke-width="1"/>
+  <text x="425" y="229" text-anchor="middle" font-size="11" fill="#E74C3C">Blocked content</text>
+</svg>

@@ -1,0 +1,14 @@
+{
+  "name": "chapter-10-safety-ethics-cost",
+  "version": "1.0.0",
+  "description": "Code examples from Chapter 10: AI Safety, Ethics, and Cost Management",
+  "scripts": {
+    "safety": "node 01_safety_settings.js",
+    "tokens": "node 02_token_counter.js",
+    "cost": "node 03_cost_calculator.js"
+  },
+  "dependencies": {
+    "@google/genai": "^2.3.0",
+    "dotenv": "^16.4.0"
+  }
+}

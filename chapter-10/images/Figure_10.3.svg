@@ -1,0 +1,45 @@
+<svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg" font-family="Palatino Linotype, serif" font-size="13">
+  <text x="350" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">Cost Optimization Strategies</text>
+
+  <!-- 5 strategy boxes in a row -->
+  <rect x="15" y="55" width="125" height="80" rx="5" fill="#E6F1FB" stroke="#2B6CB0" stroke-width="1.2"/>
+  <text x="77" y="80" text-anchor="middle" font-weight="bold" font-size="11" fill="#2B6CB0">Model</text>
+  <text x="77" y="95" text-anchor="middle" font-weight="bold" font-size="11" fill="#2B6CB0">Selection</text>
+  <text x="77" y="120" text-anchor="middle" font-size="10" fill="#555">Use Flash-Lite</text>
+  <text x="77" y="132" text-anchor="middle" font-size="10" fill="#555">for simple tasks</text>
+
+  <rect x="155" y="55" width="125" height="80" rx="5" fill="#E1F5EE" stroke="#276749" stroke-width="1.2"/>
+  <text x="217" y="80" text-anchor="middle" font-weight="bold" font-size="11" fill="#276749">Shorter</text>
+  <text x="217" y="95" text-anchor="middle" font-weight="bold" font-size="11" fill="#276749">Prompts</text>
+  <text x="217" y="120" text-anchor="middle" font-size="10" fill="#555">Remove verbose</text>
+  <text x="217" y="132" text-anchor="middle" font-size="10" fill="#555">instructions</text>
+
+  <rect x="295" y="55" width="125" height="80" rx="5" fill="#FAEEDA" stroke="#B7791F" stroke-width="1.2"/>
+  <text x="357" y="80" text-anchor="middle" font-weight="bold" font-size="11" fill="#B7791F">Context</text>
+  <text x="357" y="95" text-anchor="middle" font-weight="bold" font-size="11" fill="#B7791F">Caching</text>
+  <text x="357" y="120" text-anchor="middle" font-size="10" fill="#555">Cache repeated</text>
+  <text x="357" y="132" text-anchor="middle" font-size="10" fill="#555">prompts</text>
+
+  <rect x="435" y="55" width="125" height="80" rx="5" fill="#EEEDFE" stroke="#6B46C1" stroke-width="1.2"/>
+  <text x="497" y="80" text-anchor="middle" font-weight="bold" font-size="11" fill="#6B46C1">Batch</text>
+  <text x="497" y="95" text-anchor="middle" font-weight="bold" font-size="11" fill="#6B46C1">Processing</text>
+  <text x="497" y="120" text-anchor="middle" font-size="10" fill="#555">Async jobs at</text>
+  <text x="497" y="132" text-anchor="middle" font-size="10" fill="#555">half price</text>
+
+  <rect x="575" y="55" width="115" height="80" rx="5" fill="#FAECE7" stroke="#E74C3C" stroke-width="1.2"/>
+  <text x="632" y="80" text-anchor="middle" font-weight="bold" font-size="11" fill="#E74C3C">Output</text>
+  <text x="632" y="95" text-anchor="middle" font-weight="bold" font-size="11" fill="#E74C3C">Limits</text>
+  <text x="632" y="120" text-anchor="middle" font-size="10" fill="#555">Cap max tokens</text>
+  <text x="632" y="132" text-anchor="middle" font-size="10" fill="#555">per response</text>
+
+  <!-- Savings labels -->
+  <text x="77" y="155" text-anchor="middle" font-size="11" font-weight="bold" fill="#2B6CB0">50-70%</text>
+  <text x="217" y="155" text-anchor="middle" font-size="11" font-weight="bold" fill="#276749">10-50%</text>
+  <text x="357" y="155" text-anchor="middle" font-size="11" font-weight="bold" fill="#B7791F">up to 90%</text>
+  <text x="497" y="155" text-anchor="middle" font-size="11" font-weight="bold" fill="#6B46C1">50%</text>
+  <text x="632" y="155" text-anchor="middle" font-size="11" font-weight="bold" fill="#E74C3C">20-40%</text>
+
+  <!-- Bottom summary -->
+  <rect x="130" y="180" width="440" height="35" rx="5" fill="#F8F9FA" stroke="#ddd" stroke-width="1"/>
+  <text x="350" y="202" text-anchor="middle" font-size="12" fill="#555">Combined savings: up to 90%+ when multiple strategies are applied together</text>
+</svg>
