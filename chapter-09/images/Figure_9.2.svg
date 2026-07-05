@@ -1,0 +1,42 @@
+<svg viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg" font-family="Palatino Linotype, serif" font-size="13">
+  <text x="360" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">MCP Architecture</text>
+
+  <!-- Host -->
+  <rect x="30" y="55" width="250" height="200" rx="8" fill="#F8F9FA" stroke="#6B46C1" stroke-width="1.5"/>
+  <text x="155" y="78" text-anchor="middle" font-size="14" font-weight="bold" fill="#6B46C1">Host (Cursor)</text>
+
+  <!-- AI Model inside Host -->
+  <rect x="55" y="90" width="200" height="35" rx="4" fill="#EEEDFE" stroke="#6B46C1" stroke-width="1"/>
+  <text x="155" y="112" text-anchor="middle" fill="#1a1a1a">AI Model (LLM)</text>
+
+  <!-- Client inside Host -->
+  <rect x="55" y="140" width="90" height="35" rx="4" fill="#FAEEDA" stroke="#B7791F" stroke-width="1.2"/>
+  <text x="100" y="162" text-anchor="middle" font-size="11" fill="#1a1a1a">Client 1</text>
+
+  <rect x="165" y="140" width="90" height="35" rx="4" fill="#FAEEDA" stroke="#B7791F" stroke-width="1.2"/>
+  <text x="210" y="162" text-anchor="middle" font-size="11" fill="#1a1a1a">Client 2</text>
+
+  <text x="155" y="205" text-anchor="middle" font-size="10" fill="#888">Each client connects to</text>
+  <text x="155" y="218" text-anchor="middle" font-size="10" fill="#888">one MCP server</text>
+
+  <!-- Transport arrows -->
+  <line x1="280" y1="157" x2="410" y2="107" stroke="#555" stroke-width="1.2"/>
+  <polygon points="408,103 408,111 415,107" fill="#555"/>
+  <text x="340" y="118" font-size="10" fill="#888">stdio</text>
+
+  <line x1="280" y1="157" x2="410" y2="207" stroke="#555" stroke-width="1.2"/>
+  <polygon points="408,203 408,211 415,207" fill="#555"/>
+  <text x="340" y="198" font-size="10" fill="#888">stdio</text>
+
+  <!-- Server 1 -->
+  <rect x="415" y="75" width="270" height="65" rx="6" fill="#E1F5EE" stroke="#276749" stroke-width="1.5"/>
+  <text x="550" y="100" text-anchor="middle" font-weight="bold" fill="#276749">MCP Server 1</text>
+  <text x="550" y="118" text-anchor="middle" font-size="10" fill="#555">Calculator + Date tools</text>
+  <text x="550" y="132" text-anchor="middle" font-size="10" fill="#555">notes-server</text>
+
+  <!-- Server 2 -->
+  <rect x="415" y="175" width="270" height="65" rx="6" fill="#E1F5EE" stroke="#276749" stroke-width="1.5"/>
+  <text x="550" y="200" text-anchor="middle" font-weight="bold" fill="#276749">MCP Server 2</text>
+  <text x="550" y="218" text-anchor="middle" font-size="10" fill="#555">Web fetch + Status check tools</text>
+  <text x="550" y="232" text-anchor="middle" font-size="10" fill="#555">web-tools-server</text>
+</svg>

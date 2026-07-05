@@ -1,0 +1,52 @@
+<svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="Palatino Linotype, serif" font-size="13">
+  <text x="350" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">Notes MCP Server Architecture</text>
+
+  <!-- MCP Client -->
+  <rect x="240" y="45" width="220" height="40" rx="5" fill="#EEEDFE" stroke="#6B46C1" stroke-width="1.2"/>
+  <text x="350" y="70" text-anchor="middle" font-weight="bold" fill="#6B46C1">MCP Client (Cursor / Inspector)</text>
+
+  <line x1="350" y1="85" x2="350" y2="115" stroke="#555" stroke-width="1.2"/>
+  <polygon points="345,113 355,113 350,120" fill="#555"/>
+  <text x="380" y="105" font-size="10" fill="#888">stdio</text>
+
+  <!-- Notes Server -->
+  <rect x="200" y="120" width="300" height="45" rx="6" fill="#E1F5EE" stroke="#276749" stroke-width="1.5"/>
+  <text x="350" y="140" text-anchor="middle" font-weight="bold" font-size="14" fill="#276749">Notes MCP Server</text>
+  <text x="350" y="157" text-anchor="middle" font-size="10" fill="#555">5 tools via @modelcontextprotocol/sdk</text>
+
+  <!-- Tool branches -->
+  <line x1="200" y1="165" x2="80" y2="195" stroke="#276749" stroke-width="1"/>
+  <line x1="270" y1="165" x2="220" y2="195" stroke="#276749" stroke-width="1"/>
+  <line x1="350" y1="165" x2="350" y2="195" stroke="#276749" stroke-width="1"/>
+  <line x1="430" y1="165" x2="480" y2="195" stroke="#276749" stroke-width="1"/>
+  <line x1="500" y1="165" x2="620" y2="195" stroke="#276749" stroke-width="1"/>
+
+  <!-- 5 tool boxes -->
+  <rect x="25" y="195" width="110" height="40" rx="4" fill="#E6F1FB" stroke="#2B6CB0" stroke-width="1"/>
+  <text x="80" y="220" text-anchor="middle" font-weight="bold" font-size="11" fill="#2B6CB0">create_note</text>
+
+  <rect x="160" y="195" width="110" height="40" rx="4" fill="#E6F1FB" stroke="#2B6CB0" stroke-width="1"/>
+  <text x="215" y="220" text-anchor="middle" font-weight="bold" font-size="11" fill="#2B6CB0">list_notes</text>
+
+  <rect x="295" y="195" width="110" height="40" rx="4" fill="#E6F1FB" stroke="#2B6CB0" stroke-width="1"/>
+  <text x="350" y="220" text-anchor="middle" font-weight="bold" font-size="11" fill="#2B6CB0">read_note</text>
+
+  <rect x="430" y="195" width="110" height="40" rx="4" fill="#E6F1FB" stroke="#2B6CB0" stroke-width="1"/>
+  <text x="485" y="220" text-anchor="middle" font-weight="bold" font-size="11" fill="#2B6CB0">search_notes</text>
+
+  <rect x="565" y="195" width="110" height="40" rx="4" fill="#E6F1FB" stroke="#2B6CB0" stroke-width="1"/>
+  <text x="620" y="220" text-anchor="middle" font-weight="bold" font-size="11" fill="#2B6CB0">delete_note</text>
+
+  <!-- File system -->
+  <line x1="80" y1="235" x2="80" y2="255" stroke="#555" stroke-width="0.8"/>
+  <line x1="215" y1="235" x2="215" y2="255" stroke="#555" stroke-width="0.8"/>
+  <line x1="350" y1="235" x2="350" y2="255" stroke="#555" stroke-width="0.8"/>
+  <line x1="485" y1="235" x2="485" y2="255" stroke="#555" stroke-width="0.8"/>
+  <line x1="620" y1="235" x2="620" y2="255" stroke="#555" stroke-width="0.8"/>
+  <line x1="80" y1="255" x2="620" y2="255" stroke="#555" stroke-width="0.8"/>
+  <line x1="350" y1="255" x2="350" y2="270" stroke="#555" stroke-width="1"/>
+  <polygon points="345,268 355,268 350,275" fill="#555"/>
+
+  <rect x="270" y="275" width="160" height="25" rx="4" fill="#FAEEDA" stroke="#B7791F" stroke-width="1"/>
+  <text x="350" y="293" text-anchor="middle" font-size="11" font-weight="bold" fill="#B7791F">./notes/ directory</text>
+</svg>

@@ -1,0 +1,18 @@
+{
+  "name": "chapter-09-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Code examples from Chapter 9: Model Context Protocol",
+  "scripts": {
+    "first": "node 01_first_server.mjs",
+    "resources": "node 02_with_resources.mjs",
+    "api": "node 03_api_server.mjs",
+    "notes": "node 04_notes_server.mjs",
+    "inspect:first": "npx @modelcontextprotocol/inspector node 01_first_server.mjs",
+    "inspect:notes": "npx @modelcontextprotocol/inspector node 04_notes_server.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.0"
+  }
+}

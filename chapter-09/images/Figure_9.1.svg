@@ -1,0 +1,70 @@
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="Palatino Linotype, serif" font-size="13">
+  <text x="360" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">The Problem MCP Solves</text>
+
+  <!-- Before MCP -->
+  <rect x="15" y="45" width="330" height="240" rx="6" fill="#F8F9FA" stroke="#E74C3C" stroke-width="1" stroke-dasharray="6,4"/>
+  <text x="180" y="68" text-anchor="middle" font-size="14" font-weight="bold" fill="#E74C3C">Before MCP</text>
+
+  <rect x="40" y="80" width="90" height="30" rx="4" fill="#EEEDFE" stroke="#6B46C1" stroke-width="1"/>
+  <text x="85" y="100" text-anchor="middle" font-size="10" fill="#1a1a1a">ChatGPT</text>
+  <rect x="40" y="120" width="90" height="30" rx="4" fill="#EEEDFE" stroke="#6B46C1" stroke-width="1"/>
+  <text x="85" y="140" text-anchor="middle" font-size="10" fill="#1a1a1a">Claude</text>
+  <rect x="40" y="160" width="90" height="30" rx="4" fill="#EEEDFE" stroke="#6B46C1" stroke-width="1"/>
+  <text x="85" y="180" text-anchor="middle" font-size="10" fill="#1a1a1a">Cursor</text>
+
+  <rect x="220" y="80" width="100" height="30" rx="4" fill="#E1F5EE" stroke="#276749" stroke-width="1"/>
+  <text x="270" y="100" text-anchor="middle" font-size="10" fill="#1a1a1a">Weather API</text>
+  <rect x="220" y="120" width="100" height="30" rx="4" fill="#E1F5EE" stroke="#276749" stroke-width="1"/>
+  <text x="270" y="140" text-anchor="middle" font-size="10" fill="#1a1a1a">Database</text>
+  <rect x="220" y="160" width="100" height="30" rx="4" fill="#E1F5EE" stroke="#276749" stroke-width="1"/>
+  <text x="270" y="180" text-anchor="middle" font-size="10" fill="#1a1a1a">File System</text>
+
+  <!-- Messy lines -->
+  <line x1="130" y1="95" x2="220" y2="95" stroke="#E74C3C" stroke-width="0.8"/>
+  <line x1="130" y1="95" x2="220" y2="135" stroke="#E74C3C" stroke-width="0.8"/>
+  <line x1="130" y1="95" x2="220" y2="175" stroke="#E74C3C" stroke-width="0.8"/>
+  <line x1="130" y1="135" x2="220" y2="95" stroke="#E74C3C" stroke-width="0.8"/>
+  <line x1="130" y1="135" x2="220" y2="135" stroke="#E74C3C" stroke-width="0.8"/>
+  <line x1="130" y1="135" x2="220" y2="175" stroke="#E74C3C" stroke-width="0.8"/>
+  <line x1="130" y1="175" x2="220" y2="95" stroke="#E74C3C" stroke-width="0.8"/>
+  <line x1="130" y1="175" x2="220" y2="135" stroke="#E74C3C" stroke-width="0.8"/>
+  <line x1="130" y1="175" x2="220" y2="175" stroke="#E74C3C" stroke-width="0.8"/>
+
+  <text x="180" y="230" text-anchor="middle" font-size="10" fill="#E74C3C">9 custom integrations</text>
+  <text x="180" y="245" text-anchor="middle" font-size="10" fill="#E74C3C">for 3 clients x 3 tools</text>
+
+  <!-- After MCP -->
+  <rect x="375" y="45" width="330" height="240" rx="6" fill="#F8F9FA" stroke="#276749" stroke-width="1" stroke-dasharray="6,4"/>
+  <text x="540" y="68" text-anchor="middle" font-size="14" font-weight="bold" fill="#276749">After MCP</text>
+
+  <rect x="400" y="80" width="90" height="30" rx="4" fill="#EEEDFE" stroke="#6B46C1" stroke-width="1"/>
+  <text x="445" y="100" text-anchor="middle" font-size="10" fill="#1a1a1a">ChatGPT</text>
+  <rect x="400" y="120" width="90" height="30" rx="4" fill="#EEEDFE" stroke="#6B46C1" stroke-width="1"/>
+  <text x="445" y="140" text-anchor="middle" font-size="10" fill="#1a1a1a">Claude</text>
+  <rect x="400" y="160" width="90" height="30" rx="4" fill="#EEEDFE" stroke="#6B46C1" stroke-width="1"/>
+  <text x="445" y="180" text-anchor="middle" font-size="10" fill="#1a1a1a">Cursor</text>
+
+  <!-- MCP Standard -->
+  <rect x="515" y="90" width="50" height="90" rx="4" fill="#FAEEDA" stroke="#B7791F" stroke-width="1.5"/>
+  <text x="540" y="125" text-anchor="middle" font-size="10" font-weight="bold" fill="#B7791F">M</text>
+  <text x="540" y="140" text-anchor="middle" font-size="10" font-weight="bold" fill="#B7791F">C</text>
+  <text x="540" y="155" text-anchor="middle" font-size="10" font-weight="bold" fill="#B7791F">P</text>
+
+  <line x1="490" y1="95" x2="515" y2="120" stroke="#276749" stroke-width="1"/>
+  <line x1="490" y1="135" x2="515" y2="135" stroke="#276749" stroke-width="1"/>
+  <line x1="490" y1="175" x2="515" y2="150" stroke="#276749" stroke-width="1"/>
+
+  <rect x="590" y="80" width="100" height="30" rx="4" fill="#E1F5EE" stroke="#276749" stroke-width="1"/>
+  <text x="640" y="100" text-anchor="middle" font-size="10" fill="#1a1a1a">Weather API</text>
+  <rect x="590" y="120" width="100" height="30" rx="4" fill="#E1F5EE" stroke="#276749" stroke-width="1"/>
+  <text x="640" y="140" text-anchor="middle" font-size="10" fill="#1a1a1a">Database</text>
+  <rect x="590" y="160" width="100" height="30" rx="4" fill="#E1F5EE" stroke="#276749" stroke-width="1"/>
+  <text x="640" y="180" text-anchor="middle" font-size="10" fill="#1a1a1a">File System</text>
+
+  <line x1="565" y1="120" x2="590" y2="95" stroke="#276749" stroke-width="1"/>
+  <line x1="565" y1="135" x2="590" y2="135" stroke="#276749" stroke-width="1"/>
+  <line x1="565" y1="150" x2="590" y2="175" stroke="#276749" stroke-width="1"/>
+
+  <text x="540" y="230" text-anchor="middle" font-size="10" fill="#276749">3 + 3 = 6 standard connections</text>
+  <text x="540" y="245" text-anchor="middle" font-size="10" fill="#276749">One protocol for everything</text>
+</svg>
