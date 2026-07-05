@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <style>
+      text { font-family: Arial, sans-serif; }
+      .label { font-size: 12px; fill: #333; text-anchor: middle; }
+      .sublabel { font-size: 10px; fill: #666; text-anchor: middle; }
+      .step { font-size: 10px; fill: white; text-anchor: middle; font-weight: bold; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="200" fill="white"/>
+
+  <!-- Step 1: Upload -->
+  <rect x="20" y="50" width="110" height="70" rx="6" fill="#E6F1FB" stroke="#4A90D9" stroke-width="1.5"/>
+  <circle cx="40" cy="65" r="10" fill="#4A90D9"/>
+  <text x="40" y="69" class="step">1</text>
+  <text x="75" y="85" class="label">Upload</text>
+  <text x="75" y="100" class="sublabel">PDF or TXT</text>
+
+  <line x1="130" y1="85" x2="155" y2="85" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 2: Extract -->
+  <rect x="155" y="50" width="110" height="70" rx="6" fill="#FAEEDA" stroke="#D4A843" stroke-width="1.5"/>
+  <circle cx="175" cy="65" r="10" fill="#D4A843"/>
+  <text x="175" y="69" class="step">2</text>
+  <text x="210" y="85" class="label">Extract</text>
+  <text x="210" y="100" class="sublabel">Parse text</text>
+
+  <line x1="265" y1="85" x2="290" y2="85" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 3: Chunk -->
+  <rect x="290" y="50" width="110" height="70" rx="6" fill="#FAECE7" stroke="#D97452" stroke-width="1.5"/>
+  <circle cx="310" cy="65" r="10" fill="#D97452"/>
+  <text x="310" y="69" class="step">3</text>
+  <text x="345" y="85" class="label">Chunk</text>
+  <text x="345" y="100" class="sublabel">500 chars + overlap</text>
+
+  <line x1="400" y1="85" x2="425" y2="85" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 4: Embed -->
+  <rect x="425" y="50" width="110" height="70" rx="6" fill="#EEEDFE" stroke="#8B7FC7" stroke-width="1.5"/>
+  <circle cx="445" cy="65" r="10" fill="#8B7FC7"/>
+  <text x="445" y="69" class="step">4</text>
+  <text x="480" y="85" class="label">Embed</text>
+  <text x="480" y="100" class="sublabel">Gemini API</text>
+
+  <line x1="535" y1="85" x2="560" y2="85" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 5: Store -->
+  <rect x="560" y="50" width="110" height="70" rx="6" fill="#E1F5EE" stroke="#4CAF72" stroke-width="1.5"/>
+  <circle cx="580" cy="65" r="10" fill="#4CAF72"/>
+  <text x="580" y="69" class="step">5</text>
+  <text x="615" y="85" class="label">Store</text>
+  <text x="615" y="100" class="sublabel">Pinecone</text>
+
+  <!-- Arrow to checkmark -->
+  <line x1="670" y1="85" x2="700" y2="85" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Checkmark -->
+  <circle cx="720" cy="85" r="18" fill="#27ae60"/>
+  <polyline points="710,85 717,92 732,77" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Caption labels -->
+  <text x="75" y="145" class="sublabel">multer</text>
+  <text x="210" y="145" class="sublabel">pdf-parse</text>
+  <text x="345" y="145" class="sublabel">chunkText()</text>
+  <text x="480" y="145" class="sublabel">gemini-embedding-2</text>
+  <text x="615" y="145" class="sublabel">upsert()</text>
+</svg>

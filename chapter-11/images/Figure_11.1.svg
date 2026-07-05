@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <style>
+      text { font-family: Arial, sans-serif; }
+      .title { font-size: 14px; font-weight: bold; fill: #333; }
+      .label { font-size: 12px; fill: #333; text-anchor: middle; }
+      .sublabel { font-size: 10px; fill: #666; text-anchor: middle; }
+      .arrow-label { font-size: 10px; fill: #555; text-anchor: middle; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="white"/>
+
+  <!-- Frontend Box -->
+  <rect x="40" y="120" width="160" height="160" rx="8" fill="#E6F1FB" stroke="#4A90D9" stroke-width="1.5"/>
+  <text x="120" y="145" class="label">Frontend</text>
+  <text x="120" y="165" class="sublabel">HTML / CSS / JS</text>
+  <rect x="60" y="180" width="120" height="30" rx="4" fill="white" stroke="#4A90D9" stroke-width="1"/>
+  <text x="120" y="200" class="sublabel">Upload Form</text>
+  <rect x="60" y="220" width="120" height="30" rx="4" fill="white" stroke="#4A90D9" stroke-width="1"/>
+  <text x="120" y="240" class="sublabel">Chat Interface</text>
+
+  <!-- Arrow: Frontend → Server -->
+  <line x1="200" y1="200" x2="280" y2="200" stroke="#555" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="240" y="190" class="arrow-label">HTTP</text>
+
+  <!-- Server Box -->
+  <rect x="280" y="80" width="200" height="240" rx="8" fill="#FAEEDA" stroke="#D4A843" stroke-width="1.5"/>
+  <text x="380" y="105" class="label">Express.js Server</text>
+  <rect x="300" y="120" width="160" height="30" rx="4" fill="white" stroke="#D4A843" stroke-width="1"/>
+  <text x="380" y="140" class="sublabel">POST /upload</text>
+  <rect x="300" y="160" width="160" height="30" rx="4" fill="white" stroke="#D4A843" stroke-width="1"/>
+  <text x="380" y="180" class="sublabel">POST /ask</text>
+  <rect x="300" y="200" width="160" height="30" rx="4" fill="white" stroke="#D4A843" stroke-width="1"/>
+  <text x="380" y="220" class="sublabel">Document Processor</text>
+  <rect x="300" y="240" width="160" height="30" rx="4" fill="white" stroke="#D4A843" stroke-width="1"/>
+  <text x="380" y="260" class="sublabel">RAG Engine</text>
+  <rect x="300" y="280" width="160" height="30" rx="4" fill="white" stroke="#D4A843" stroke-width="1"/>
+  <text x="380" y="300" class="sublabel">Embedding Service</text>
+
+  <!-- Arrow: Server → Gemini -->
+  <line x1="480" y1="160" x2="570" y2="120" stroke="#555" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="540" y="130" class="arrow-label">API</text>
+
+  <!-- Arrow: Server → Pinecone -->
+  <line x1="480" y1="240" x2="570" y2="280" stroke="#555" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="540" y="270" class="arrow-label">API</text>
+
+  <!-- Gemini Box -->
+  <rect x="570" y="70" width="180" height="80" rx="8" fill="#EEEDFE" stroke="#8B7FC7" stroke-width="1.5"/>
+  <text x="660" y="100" class="label">Gemini API</text>
+  <text x="660" y="120" class="sublabel">Embeddings + Generation</text>
+  <text x="660" y="138" class="sublabel">gemini-2.5-flash</text>
+
+  <!-- Pinecone Box -->
+  <rect x="570" y="250" width="180" height="80" rx="8" fill="#E1F5EE" stroke="#4CAF72" stroke-width="1.5"/>
+  <text x="660" y="280" class="label">Pinecone</text>
+  <text x="660" y="300" class="sublabel">Vector Database</text>
+  <text x="660" y="318" class="sublabel">768 dimensions</text>
+</svg>

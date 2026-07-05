@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Document Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AI Document Assistant</h1>
+      <p>Upload a document and ask questions about it</p>
+    </header>
+
+    <section class="upload-section">
+      <h2>Upload Document</h2>
+      <div class="upload-area" id="uploadArea">
+        <p>Drag and drop a PDF or TXT file here</p>
+        <p>or</p>
+        <label class="upload-button">
+          Choose File
+          <input type="file" id="fileInput" accept=".pdf,.txt" hidden>
+        </label>
+        <p class="file-info" id="fileInfo"></p>
+      </div>
+      <button id="uploadBtn" disabled>Upload and Process</button>
+      <div class="status" id="uploadStatus"></div>
+    </section>
+
+    <section class="chat-section">
+      <h2>Ask Questions</h2>
+      <div class="chat-messages" id="chatMessages">
+        <div class="message assistant">
+          Upload a document first, then ask any question about it.
+        </div>
+      </div>
+      <div class="chat-input">
+        <input type="text" id="questionInput"
+               placeholder="Ask a question about your document..."
+               disabled>
+        <button id="askBtn" disabled>Ask</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

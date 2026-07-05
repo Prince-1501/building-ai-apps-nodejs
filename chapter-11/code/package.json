@@ -1,0 +1,20 @@
+{
+  "name": "ai-document-assistant",
+  "version": "1.0.0",
+  "description": "AI Document Assistant - Upload documents and ask questions using RAG",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["ai", "rag", "document-assistant", "gemini", "pinecone"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^2.0.0",
+    "@pinecone-database/pinecone": "^4.0.0",
+    "dotenv": "^16.4.0",
+    "express": "^4.21.0",
+    "multer": "^2.0.0",
+    "pdf-parse": "^2.4.0"
+  }
+}

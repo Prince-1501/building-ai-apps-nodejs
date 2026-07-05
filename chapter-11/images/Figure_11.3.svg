@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <style>
+      text { font-family: Arial, sans-serif; }
+      .label { font-size: 12px; fill: #333; text-anchor: middle; }
+      .sublabel { font-size: 10px; fill: #666; text-anchor: middle; }
+      .step { font-size: 10px; fill: white; text-anchor: middle; font-weight: bold; }
+    </style>
+    <marker id="qarrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="200" fill="white"/>
+
+  <!-- Step 1: Question -->
+  <rect x="20" y="50" width="120" height="70" rx="6" fill="#E6F1FB" stroke="#4A90D9" stroke-width="1.5"/>
+  <circle cx="40" cy="65" r="10" fill="#4A90D9"/>
+  <text x="40" y="69" class="step">1</text>
+  <text x="80" y="85" class="label">Question</text>
+  <text x="80" y="100" class="sublabel">User input</text>
+
+  <line x1="140" y1="85" x2="170" y2="85" stroke="#555" stroke-width="1.5" marker-end="url(#qarrow)"/>
+
+  <!-- Step 2: Embed Query -->
+  <rect x="170" y="50" width="120" height="70" rx="6" fill="#EEEDFE" stroke="#8B7FC7" stroke-width="1.5"/>
+  <circle cx="190" cy="65" r="10" fill="#8B7FC7"/>
+  <text x="190" y="69" class="step">2</text>
+  <text x="230" y="85" class="label">Embed</text>
+  <text x="230" y="100" class="sublabel">Query vector</text>
+
+  <line x1="290" y1="85" x2="320" y2="85" stroke="#555" stroke-width="1.5" marker-end="url(#qarrow)"/>
+
+  <!-- Step 3: Retrieve -->
+  <rect x="320" y="50" width="120" height="70" rx="6" fill="#E1F5EE" stroke="#4CAF72" stroke-width="1.5"/>
+  <circle cx="340" cy="65" r="10" fill="#4CAF72"/>
+  <text x="340" y="69" class="step">3</text>
+  <text x="380" y="85" class="label">Retrieve</text>
+  <text x="380" y="100" class="sublabel">Top 3 chunks</text>
+
+  <line x1="440" y1="85" x2="470" y2="85" stroke="#555" stroke-width="1.5" marker-end="url(#qarrow)"/>
+
+  <!-- Step 4: Generate -->
+  <rect x="470" y="50" width="120" height="70" rx="6" fill="#FAEEDA" stroke="#D4A843" stroke-width="1.5"/>
+  <circle cx="490" cy="65" r="10" fill="#D4A843"/>
+  <text x="490" y="69" class="step">4</text>
+  <text x="530" y="85" class="label">Generate</text>
+  <text x="530" y="100" class="sublabel">Context + LLM</text>
+
+  <line x1="590" y1="85" x2="620" y2="85" stroke="#555" stroke-width="1.5" marker-end="url(#qarrow)"/>
+
+  <!-- Step 5: Answer -->
+  <rect x="620" y="50" width="140" height="70" rx="6" fill="#FAECE7" stroke="#D97452" stroke-width="1.5"/>
+  <circle cx="640" cy="65" r="10" fill="#D97452"/>
+  <text x="640" y="69" class="step">5</text>
+  <text x="690" y="85" class="label">Answer</text>
+  <text x="690" y="100" class="sublabel">With sources</text>
+
+  <!-- Tool labels -->
+  <text x="80" y="145" class="sublabel">POST /ask</text>
+  <text x="230" y="145" class="sublabel">gemini-embedding-2</text>
+  <text x="380" y="145" class="sublabel">Pinecone query()</text>
+  <text x="530" y="145" class="sublabel">gemini-2.5-flash</text>
+  <text x="690" y="145" class="sublabel">JSON response</text>
+</svg>
