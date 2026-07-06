@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350" width="700" height="350">
+  <defs>
+    <style>
+      text { font-family: Arial, sans-serif; }
+      .title { font-size: 14px; fill: #333; text-anchor: middle; font-weight: bold; }
+      .label { font-size: 12px; fill: #333; text-anchor: middle; }
+      .sublabel { font-size: 10px; fill: #666; text-anchor: middle; }
+    </style>
+  </defs>
+  <rect width="700" height="350" fill="white"/>
+
+  <!-- Center: This Book -->
+  <circle cx="350" cy="175" r="55" fill="#FAEEDA" stroke="#D4A843" stroke-width="2"/>
+  <text x="350" y="170" class="label">This Book</text>
+  <text x="350" y="185" class="sublabel">Ch1-Ch14</text>
+
+  <!-- Top: Multimodal AI -->
+  <rect x="285" y="15" width="130" height="50" rx="6" fill="#EEEDFE" stroke="#8B7FC7" stroke-width="1.5"/>
+  <text x="350" y="38" class="label">Multimodal AI</text>
+  <text x="350" y="53" class="sublabel">Image + Audio + Video</text>
+  <line x1="350" y1="120" x2="350" y2="65" stroke="#8B7FC7" stroke-width="1.5"/>
+
+  <!-- Top-Right: Fine-tuning -->
+  <rect x="510" y="45" width="130" height="50" rx="6" fill="#E6F1FB" stroke="#4A90D9" stroke-width="1.5"/>
+  <text x="575" y="68" class="label">Fine-tuning</text>
+  <text x="575" y="83" class="sublabel">Custom models</text>
+  <line x1="395" y1="140" x2="510" y2="80" stroke="#4A90D9" stroke-width="1.5"/>
+
+  <!-- Right: Multi-agent -->
+  <rect x="530" y="150" width="130" height="50" rx="6" fill="#E1F5EE" stroke="#4CAF72" stroke-width="1.5"/>
+  <text x="595" y="173" class="label">Multi-agent</text>
+  <text x="595" y="188" class="sublabel">Agent collaboration</text>
+  <line x1="405" y1="175" x2="530" y2="175" stroke="#4CAF72" stroke-width="1.5"/>
+
+  <!-- Bottom-Right: AI evaluation -->
+  <rect x="510" y="260" width="130" height="50" rx="6" fill="#FAECE7" stroke="#D97452" stroke-width="1.5"/>
+  <text x="575" y="283" class="label">AI evaluation</text>
+  <text x="575" y="298" class="sublabel">Testing AI outputs</text>
+  <line x1="395" y1="210" x2="510" y2="275" stroke="#D97452" stroke-width="1.5"/>
+
+  <!-- Bottom: AI products -->
+  <rect x="285" y="280" width="130" height="50" rx="6" fill="#FAEEDA" stroke="#D4A843" stroke-width="1.5"/>
+  <text x="350" y="303" class="label">AI products</text>
+  <text x="350" y="318" class="sublabel">SaaS + Monetization</text>
+  <line x1="350" y1="230" x2="350" y2="280" stroke="#D4A843" stroke-width="1.5"/>
+
+  <!-- Bottom-Left: Voice + Real-time -->
+  <rect x="60" y="260" width="130" height="50" rx="6" fill="#E6F1FB" stroke="#4A90D9" stroke-width="1.5"/>
+  <text x="125" y="283" class="label">Voice + Real-time</text>
+  <text x="125" y="298" class="sublabel">Conversational AI</text>
+  <line x1="305" y1="210" x2="190" y2="275" stroke="#4A90D9" stroke-width="1.5"/>
+
+  <!-- Left: Local AI -->
+  <rect x="40" y="150" width="130" height="50" rx="6" fill="#E1F5EE" stroke="#4CAF72" stroke-width="1.5"/>
+  <text x="105" y="173" class="label">Local + Edge AI</text>
+  <text x="105" y="188" class="sublabel">On-device models</text>
+  <line x1="295" y1="175" x2="170" y2="175" stroke="#4CAF72" stroke-width="1.5"/>
+
+  <!-- Top-Left: AI Security -->
+  <rect x="60" y="45" width="130" height="50" rx="6" fill="#FAECE7" stroke="#D97452" stroke-width="1.5"/>
+  <text x="125" y="68" class="label">AI security</text>
+  <text x="125" y="83" class="sublabel">Red teaming + Safety</text>
+  <line x1="305" y1="140" x2="190" y2="80" stroke="#D97452" stroke-width="1.5"/>
+</svg>
