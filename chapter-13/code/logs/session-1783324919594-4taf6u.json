@@ -1,0 +1,19 @@
+{
+  "sessionId": "session-1783324919594-4taf6u",
+  "status": "active",
+  "messageCount": 2,
+  "createdAt": "2026-07-06T08:02:12.558Z",
+  "updatedAt": "2026-07-06T08:02:19.819Z",
+  "messages": [
+    {
+      "role": "customer",
+      "text": "What is your return policy?",
+      "timestamp": "2026-07-06T08:02:12.558Z"
+    },
+    {
+      "role": "assistant",
+      "text": "Our return policy allows for returns within 30 days of purchase. Items must be in their original condition, with tags attached and original packaging.\n\nTo initiate a return, please visit your account page, select the relevant order, and click \"Request Return,\" then follow the instructions.\n\nRefunds are processed to the original payment method within 5-7 business days after we receive the returned item. Shipping costs are generally non-refundable, except if the item was defective or an error was made on our part.\n\nFor defective items, please contact support within 48 hours of receipt with photos of the defect. We offer a full refund, including shipping costs, or a free replacement for defective items.\n\nPlease note that digital products, gift cards, and items marked as \"Final Sale\" are not eligible for return or refund. If your return falls outside the 30-day window, store credit may be offered on a case-by-case basis; please contact our support team to discuss.",
+      "timestamp": "2026-07-06T08:02:19.819Z"
+    }
+  ]
+}

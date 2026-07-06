@@ -1,0 +1,49 @@
+{
+  "sessionId": "session-1783325027132-2tm631",
+  "status": "escalated",
+  "messageCount": 8,
+  "createdAt": "2026-07-06T08:03:49.146Z",
+  "updatedAt": "2026-07-06T08:05:19.775Z",
+  "messages": [
+    {
+      "role": "customer",
+      "text": "I want to speak to a human agent",
+      "timestamp": "2026-07-06T08:03:49.146Z"
+    },
+    {
+      "role": "assistant",
+      "text": "Of course. Let me connect you with a human support agent right away. A team member will be with you shortly. Your conversation history has been saved so you will not need to repeat anything.",
+      "timestamp": "2026-07-06T08:03:49.146Z"
+    },
+    {
+      "role": "customer",
+      "text": "What shipping options do you have?",
+      "timestamp": "2026-07-06T08:04:01.497Z"
+    },
+    {
+      "role": "assistant",
+      "text": "We offer the following shipping options:\n\n**For Domestic Orders:**\n*   **Standard Shipping:** 5-7 business days, free on orders over $50, otherwise $4.99.\n*   **Economy Shipping:** 7-10 business days, $2.99 for all orders.\n*   **Express Shipping:** 1-2 business days, $12.99 for all orders.\n\n**For International Orders:**\n*   Available to over 50 countries, typically takes 10-21 business days.\n*   Rates start at $14.99 and vary by weight and destination. Please note that customs duties and import taxes are the responsibility of the customer.",
+      "timestamp": "2026-07-06T08:04:10.556Z"
+    },
+    {
+      "role": "customer",
+      "text": "How much is the fastest one?",
+      "timestamp": "2026-07-06T08:04:16.868Z"
+    },
+    {
+      "role": "assistant",
+      "text": "The Enterprise Plan, which offers the fastest support and advanced features, is available at:\n\n*   **$99.99 per month**\n*   **$959.88 per year** (which includes a 20% discount for annual billing)",
+      "timestamp": "2026-07-06T08:04:22.297Z"
+    },
+    {
+      "role": "customer",
+      "text": "how to cook tofu ?",
+      "timestamp": "2026-07-06T08:05:14.765Z"
+    },
+    {
+      "role": "assistant",
+      "text": "I do not have information about that in my knowledge base. Let me connect you with a human agent who can help.",
+      "timestamp": "2026-07-06T08:05:19.775Z"
+    }
+  ]
+}

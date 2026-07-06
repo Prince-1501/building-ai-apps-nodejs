@@ -1,0 +1,20 @@
+{
+  "name": "ai-support-chatbot",
+  "version": "1.0.0",
+  "description": "AI Customer Support Chatbot with RAG, conversation history, and human escalation",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "ingest": "node ingest.js"
+  },
+  "keywords": ["ai", "chatbot", "rag", "customer-support", "gemini", "pinecone"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^2.0.0",
+    "@pinecone-database/pinecone": "^4.0.0",
+    "dotenv": "^16.4.0",
+    "express": "^4.21.0",
+    "uuid": "^11.0.0"
+  }
+}

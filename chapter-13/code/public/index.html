@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Support</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <div class="header-info">
+        <div class="bot-avatar">CS</div>
+        <div>
+          <h1>Customer Support</h1>
+          <p class="status-text">Online</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="message bot">
+        <div class="message-content">
+          Welcome! I am your AI support assistant. I can help
+          with questions about returns, shipping, pricing, and
+          more. How can I assist you today?
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-input-area">
+      <input type="text" id="messageInput"
+             placeholder="Type your message..."
+             autofocus>
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

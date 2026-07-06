@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" width="800" height="380">
+  <defs>
+    <style>
+      text { font-family: Arial, sans-serif; }
+      .label { font-size: 12px; fill: #333; text-anchor: middle; }
+      .sublabel { font-size: 10px; fill: #666; text-anchor: middle; }
+      .arrow-label { font-size: 10px; fill: #555; text-anchor: middle; }
+    </style>
+    <marker id="a" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+  </defs>
+  <rect width="800" height="380" fill="white"/>
+
+  <!-- Customer -->
+  <rect x="30" y="140" width="110" height="70" rx="8" fill="#E6F1FB" stroke="#4A90D9" stroke-width="1.5"/>
+  <text x="85" y="170" class="label">Customer</text>
+  <text x="85" y="188" class="sublabel">Web Browser</text>
+
+  <line x1="140" y1="175" x2="190" y2="175" stroke="#555" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="165" y="165" class="arrow-label">HTTP</text>
+
+  <!-- Express Server -->
+  <rect x="190" y="60" width="180" height="250" rx="8" fill="#FAEEDA" stroke="#D4A843" stroke-width="1.5"/>
+  <text x="280" y="85" class="label">Express.js Server</text>
+  <rect x="210" y="100" width="140" height="28" rx="4" fill="white" stroke="#D4A843" stroke-width="1"/>
+  <text x="280" y="119" class="sublabel">POST /chat</text>
+  <rect x="210" y="136" width="140" height="28" rx="4" fill="white" stroke="#D4A843" stroke-width="1"/>
+  <text x="280" y="155" class="sublabel">Chat Engine</text>
+  <rect x="210" y="172" width="140" height="28" rx="4" fill="white" stroke="#D4A843" stroke-width="1"/>
+  <text x="280" y="191" class="sublabel">Escalation Logic</text>
+  <rect x="210" y="208" width="140" height="28" rx="4" fill="white" stroke="#D4A843" stroke-width="1"/>
+  <text x="280" y="227" class="sublabel">Conversation Logger</text>
+  <rect x="210" y="248" width="140" height="28" rx="4" fill="white" stroke="#D4A843" stroke-width="1"/>
+  <text x="280" y="267" class="sublabel">Knowledge Base</text>
+
+  <!-- Arrow to Gemini -->
+  <line x1="370" y1="130" x2="440" y2="100" stroke="#555" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="400" y="103" class="arrow-label">API</text>
+
+  <!-- Arrow to Pinecone -->
+  <line x1="370" y1="260" x2="440" y2="280" stroke="#555" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="400" y="290" class="arrow-label">API</text>
+
+  <!-- Arrow to Logs -->
+  <line x1="370" y1="222" x2="440" y2="195" stroke="#555" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <!-- Gemini -->
+  <rect x="440" y="55" width="170" height="70" rx="8" fill="#EEEDFE" stroke="#8B7FC7" stroke-width="1.5"/>
+  <text x="525" y="83" class="label">Gemini API</text>
+  <text x="525" y="100" class="sublabel">gemini-2.5-flash</text>
+  <text x="525" y="115" class="sublabel">Chat + System Prompt</text>
+
+  <!-- Logs -->
+  <rect x="440" y="160" width="170" height="55" rx="8" fill="#FAECE7" stroke="#D97452" stroke-width="1.5"/>
+  <text x="525" y="183" class="label">logs/</text>
+  <text x="525" y="200" class="sublabel">JSON conversation logs</text>
+
+  <!-- Pinecone -->
+  <rect x="440" y="245" width="170" height="70" rx="8" fill="#E1F5EE" stroke="#4CAF72" stroke-width="1.5"/>
+  <text x="525" y="273" class="label">Pinecone</text>
+  <text x="525" y="290" class="sublabel">Knowledge base vectors</text>
+  <text x="525" y="305" class="sublabel">768 dimensions</text>
+
+  <!-- Knowledge files -->
+  <line x1="610" y1="280" x2="660" y2="280" stroke="#555" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="660" y="245" width="110" height="70" rx="8" fill="#E1F5EE" stroke="#4CAF72" stroke-width="1.5"/>
+  <text x="715" y="273" class="label">knowledge/</text>
+  <text x="715" y="290" class="sublabel">returns.txt</text>
+  <text x="715" y="305" class="sublabel">shipping.txt ...</text>
+</svg>

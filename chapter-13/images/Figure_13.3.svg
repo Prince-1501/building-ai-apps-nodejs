@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" width="800" height="280">
+  <defs>
+    <style>
+      text { font-family: Arial, sans-serif; }
+      .label { font-size: 12px; fill: #333; text-anchor: middle; }
+      .sublabel { font-size: 10px; fill: #666; text-anchor: middle; }
+      .step { font-size: 10px; fill: white; text-anchor: middle; font-weight: bold; }
+    </style>
+    <marker id="fw" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+  </defs>
+  <rect width="800" height="280" fill="white"/>
+
+  <!-- Step 1: Customer Message -->
+  <rect x="20" y="80" width="105" height="60" rx="6" fill="#E6F1FB" stroke="#4A90D9" stroke-width="1.5"/>
+  <circle cx="38" cy="95" r="10" fill="#4A90D9"/>
+  <text x="38" y="99" class="step">1</text>
+  <text x="72" y="110" class="label">Message</text>
+  <text x="72" y="126" class="sublabel">Customer input</text>
+
+  <line x1="125" y1="110" x2="152" y2="110" stroke="#555" stroke-width="1.5" marker-end="url(#fw)"/>
+
+  <!-- Step 2: Check escalation -->
+  <polygon points="210,80 265,110 210,140 155,110" fill="#FAECE7" stroke="#D97452" stroke-width="1.5"/>
+  <text x="210" y="107" class="sublabel">Escalation</text>
+  <text x="210" y="120" class="sublabel">keywords?</text>
+
+  <!-- YES path (down) -->
+  <line x1="210" y1="140" x2="210" y2="195" stroke="#D97452" stroke-width="1.5" marker-end="url(#fw)"/>
+  <text x="225" y="170" class="sublabel" text-anchor="start" fill="#D97452">Yes</text>
+  <rect x="155" y="195" width="110" height="50" rx="6" fill="#FAECE7" stroke="#D97452" stroke-width="1.5"/>
+  <text x="210" y="218" class="label" fill="#D97452">Escalate</text>
+  <text x="210" y="234" class="sublabel">Human agent</text>
+
+  <!-- NO path (right) -->
+  <line x1="265" y1="110" x2="295" y2="110" stroke="#555" stroke-width="1.5" marker-end="url(#fw)"/>
+  <text x="280" y="100" class="sublabel">No</text>
+
+  <!-- Step 3: RAG Retrieve -->
+  <rect x="295" y="80" width="105" height="60" rx="6" fill="#E1F5EE" stroke="#4CAF72" stroke-width="1.5"/>
+  <circle cx="313" cy="95" r="10" fill="#4CAF72"/>
+  <text x="313" y="99" class="step">3</text>
+  <text x="347" y="110" class="label">Retrieve</text>
+  <text x="347" y="126" class="sublabel">RAG / Pinecone</text>
+
+  <line x1="400" y1="110" x2="430" y2="110" stroke="#555" stroke-width="1.5" marker-end="url(#fw)"/>
+
+  <!-- Step 4: Build Context -->
+  <rect x="430" y="80" width="105" height="60" rx="6" fill="#FAEEDA" stroke="#D4A843" stroke-width="1.5"/>
+  <circle cx="448" cy="95" r="10" fill="#D4A843"/>
+  <text x="448" y="99" class="step">4</text>
+  <text x="482" y="110" class="label">Context</text>
+  <text x="482" y="126" class="sublabel">KB + question</text>
+
+  <line x1="535" y1="110" x2="565" y2="110" stroke="#555" stroke-width="1.5" marker-end="url(#fw)"/>
+
+  <!-- Step 5: Gemini Generate -->
+  <rect x="565" y="80" width="105" height="60" rx="6" fill="#EEEDFE" stroke="#8B7FC7" stroke-width="1.5"/>
+  <circle cx="583" cy="95" r="10" fill="#8B7FC7"/>
+  <text x="583" y="99" class="step">5</text>
+  <text x="617" y="110" class="label">Generate</text>
+  <text x="617" y="126" class="sublabel">Gemini + history</text>
+
+  <line x1="670" y1="110" x2="700" y2="110" stroke="#555" stroke-width="1.5" marker-end="url(#fw)"/>
+
+  <!-- Step 6: Response + Log -->
+  <rect x="700" y="80" width="80" height="60" rx="6" fill="#E6F1FB" stroke="#4A90D9" stroke-width="1.5"/>
+  <circle cx="718" cy="95" r="10" fill="#4A90D9"/>
+  <text x="718" y="99" class="step">6</text>
+  <text x="740" y="110" class="label">Reply</text>
+  <text x="740" y="126" class="sublabel">+ Log</text>
+</svg>

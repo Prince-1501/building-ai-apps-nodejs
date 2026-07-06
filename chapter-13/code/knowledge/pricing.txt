@@ -1,0 +1,15 @@
+Pricing and Plans
+
+We offer three subscription plans to fit different needs:
+
+Basic Plan: $9.99 per month. Includes access to all standard features, email support with 48-hour response time, and up to 5 user accounts. Best for individuals and small teams getting started.
+
+Professional Plan: $29.99 per month. Includes all Basic features plus priority email support with 4-hour response time, live chat support during business hours, up to 25 user accounts, and advanced analytics. Best for growing teams that need faster support.
+
+Enterprise Plan: $99.99 per month. Includes all Professional features plus 24/7 phone and live chat support, dedicated account manager, unlimited user accounts, custom integrations, and a 99.9% uptime guarantee. Best for large organizations with critical needs.
+
+All plans come with a 14-day free trial. No credit card is required for the trial. You can upgrade or downgrade your plan at any time from the Account Settings page. Changes take effect at the start of the next billing cycle.
+
+Annual billing is available at a 20% discount. The Basic Plan is $95.88 per year, the Professional Plan is $287.88 per year, and the Enterprise Plan is $959.88 per year.
+
+We accept Visa, Mastercard, American Express, and PayPal. For Enterprise plans, we also accept wire transfers and purchase orders.
