@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 280" width="460" height="280">
+  <defs>
+    <style>
+      text { font-family: Consolas, monospace; font-size: 13px; fill: #333; }
+      .folder { fill: #D4A843; }
+      .file { fill: #4A90D9; }
+      .desc { font-family: Arial, sans-serif; font-size: 11px; fill: #888; }
+    </style>
+  </defs>
+
+  <rect width="460" height="280" fill="white"/>
+
+  <!-- Root folder -->
+  <rect x="20" y="15" width="14" height="12" rx="2" class="folder"/>
+  <text x="40" y="26">ai-agent-mcp/</text>
+
+  <!-- package.json -->
+  <rect x="40" y="45" width="10" height="12" rx="1" class="file"/>
+  <text x="56" y="56">package.json</text>
+  <text x="230" y="56" class="desc">Dependencies (ESM)</text>
+
+  <!-- .env.example -->
+  <rect x="40" y="70" width="10" height="12" rx="1" class="file"/>
+  <text x="56" y="81">.env.example</text>
+  <text x="230" y="81" class="desc">Gemini API key</text>
+
+  <!-- mcp-server.mjs -->
+  <rect x="40" y="95" width="10" height="12" rx="1" class="file"/>
+  <text x="56" y="106">mcp-server.mjs</text>
+  <text x="230" y="106" class="desc">MCP server with 5 tools</text>
+
+  <!-- agent.mjs -->
+  <rect x="40" y="120" width="10" height="12" rx="1" class="file"/>
+  <text x="56" y="131">agent.mjs</text>
+  <text x="230" y="131" class="desc">Agent + MCP client + Gemini</text>
+
+  <!-- workspace folder -->
+  <rect x="40" y="155" width="14" height="12" rx="2" class="folder"/>
+  <text x="60" y="166">workspace/</text>
+  <text x="230" y="166" class="desc">Agent file workspace</text>
+
+  <!-- sample.txt -->
+  <rect x="64" y="180" width="10" height="12" rx="1" class="file"/>
+  <text x="80" y="191">sample.txt</text>
+  <text x="230" y="191" class="desc">Test file for reading</text>
+
+  <!-- Tree lines -->
+  <line x1="30" y1="35" x2="30" y2="160" stroke="#ccc" stroke-width="1"/>
+  <line x1="30" y1="52" x2="40" y2="52" stroke="#ccc" stroke-width="1"/>
+  <line x1="30" y1="77" x2="40" y2="77" stroke="#ccc" stroke-width="1"/>
+  <line x1="30" y1="102" x2="40" y2="102" stroke="#ccc" stroke-width="1"/>
+  <line x1="30" y1="127" x2="40" y2="127" stroke="#ccc" stroke-width="1"/>
+  <line x1="30" y1="160" x2="40" y2="160" stroke="#ccc" stroke-width="1"/>
+
+  <!-- Subfolder lines -->
+  <line x1="54" y1="173" x2="54" y2="187" stroke="#ccc" stroke-width="1"/>
+  <line x1="54" y1="187" x2="64" y2="187" stroke="#ccc" stroke-width="1"/>
+</svg>

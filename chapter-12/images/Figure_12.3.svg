@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+  <defs>
+    <style>
+      text { font-family: Arial, sans-serif; }
+      .label { font-size: 12px; fill: #333; text-anchor: middle; }
+      .sublabel { font-size: 10px; fill: #666; text-anchor: middle; }
+      .step { font-size: 10px; fill: white; text-anchor: middle; font-weight: bold; }
+    </style>
+    <marker id="fwd" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="300" fill="white"/>
+
+  <!-- Step 1: User Input -->
+  <rect x="20" y="100" width="110" height="60" rx="6" fill="#E6F1FB" stroke="#4A90D9" stroke-width="1.5"/>
+  <circle cx="40" cy="115" r="10" fill="#4A90D9"/>
+  <text x="40" y="119" class="step">1</text>
+  <text x="75" y="130" class="label">User input</text>
+  <text x="75" y="146" class="sublabel">CLI message</text>
+
+  <line x1="130" y1="130" x2="160" y2="130" stroke="#555" stroke-width="1.5" marker-end="url(#fwd)"/>
+
+  <!-- Step 2: Send to Gemini -->
+  <rect x="160" y="100" width="120" height="60" rx="6" fill="#EEEDFE" stroke="#8B7FC7" stroke-width="1.5"/>
+  <circle cx="180" cy="115" r="10" fill="#8B7FC7"/>
+  <text x="180" y="119" class="step">2</text>
+  <text x="220" y="130" class="label">Gemini</text>
+  <text x="220" y="146" class="sublabel">Decides action</text>
+
+  <line x1="280" y1="130" x2="310" y2="130" stroke="#555" stroke-width="1.5" marker-end="url(#fwd)"/>
+
+  <!-- Step 3: Decision Diamond -->
+  <polygon points="370,100 430,130 370,160 310,130" fill="#FAEEDA" stroke="#D4A843" stroke-width="1.5"/>
+  <text x="370" y="127" class="sublabel">Function</text>
+  <text x="370" y="140" class="sublabel">call?</text>
+
+  <!-- YES path (down) -->
+  <line x1="370" y1="160" x2="370" y2="200" stroke="#555" stroke-width="1.5" marker-end="url(#fwd)"/>
+  <text x="385" y="185" class="sublabel" text-anchor="start">Yes</text>
+
+  <!-- Step 4: Execute MCP Tool -->
+  <rect x="310" y="200" width="120" height="60" rx="6" fill="#FAECE7" stroke="#D97452" stroke-width="1.5"/>
+  <circle cx="330" cy="215" r="10" fill="#D97452"/>
+  <text x="330" y="219" class="step">4</text>
+  <text x="370" y="230" class="label">MCP Tool</text>
+  <text x="370" y="246" class="sublabel">Execute via client</text>
+
+  <!-- Step 5: Send result back -->
+  <rect x="460" y="200" width="120" height="60" rx="6" fill="#EEEDFE" stroke="#8B7FC7" stroke-width="1.5"/>
+  <circle cx="480" cy="215" r="10" fill="#8B7FC7"/>
+  <text x="480" y="219" class="step">5</text>
+  <text x="520" y="230" class="label">Send result</text>
+  <text x="520" y="246" class="sublabel">functionResponse</text>
+
+  <!-- Arrow: Execute → Send result -->
+  <line x1="430" y1="230" x2="460" y2="230" stroke="#555" stroke-width="1.5" marker-end="url(#fwd)"/>
+
+  <!-- Loop arrow: Send result → back to Gemini (step 2) -->
+  <line x1="580" y1="230" x2="620" y2="230" stroke="#555" stroke-width="1.5"/>
+  <line x1="620" y1="230" x2="620" y2="70" stroke="#555" stroke-width="1.5"/>
+  <line x1="620" y1="70" x2="220" y2="70" stroke="#555" stroke-width="1.5"/>
+  <line x1="220" y1="70" x2="220" y2="100" stroke="#555" stroke-width="1.5" marker-end="url(#fwd)"/>
+  <text x="420" y="60" class="sublabel">Loop back</text>
+
+  <!-- NO path (right) -->
+  <line x1="430" y1="130" x2="470" y2="130" stroke="#555" stroke-width="1.5" marker-end="url(#fwd)"/>
+  <text x="450" y="120" class="sublabel">No</text>
+
+  <!-- Step 6: Text Response -->
+  <rect x="470" y="100" width="120" height="60" rx="6" fill="#E1F5EE" stroke="#4CAF72" stroke-width="1.5"/>
+  <circle cx="490" cy="115" r="10" fill="#4CAF72"/>
+  <text x="490" y="119" class="step">6</text>
+  <text x="530" y="130" class="label">Text answer</text>
+  <text x="530" y="146" class="sublabel">Display to user</text>
+
+  <!-- Arrow to checkmark -->
+  <line x1="590" y1="130" x2="630" y2="130" stroke="#555" stroke-width="1.5" marker-end="url(#fwd)"/>
+
+  <!-- Checkmark -->
+  <circle cx="650" cy="130" r="18" fill="#27ae60"/>
+  <polyline points="640,130 647,137 662,122" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

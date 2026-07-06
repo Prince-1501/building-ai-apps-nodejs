@@ -1,0 +1,12 @@
+Node.js Best Practices for 2026
+
+1. Use async/await for all asynchronous operations.
+2. Store secrets in environment variables, never in code.
+3. Use ESM (import/export) for new projects.
+4. Add input validation for all API endpoints.
+5. Implement proper error handling with try-catch blocks.
+6. Use a linter like ESLint to enforce code quality.
+7. Write unit tests for critical business logic.
+8. Keep dependencies updated to avoid security vulnerabilities.
+9. Use structured logging for production debugging.
+10. Monitor application performance with APM tools.
